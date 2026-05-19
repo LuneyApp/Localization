@@ -226,4 +226,3 @@ flutter gen-l10n                # regenerate, then commit the .arb + generated f
 is a formatter, never a content edit). `@meta` blocks are pretty-printed
 on purpose (they are read far more than edited). Full convention:
 `dev documentations/conventions/localization.md`.
-# Localization
