@@ -174,7 +174,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String accountRestrictionsLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your account restrictions right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -239,7 +239,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String accountReviewsLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your account reviews right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -284,7 +284,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String accountViolationsLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your account violations right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -506,7 +506,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String anniversaryCardScreenLoadError(String error) {
-    return 'Could not load card: $error';
+    return 'We couldn\'t load this card right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -754,7 +754,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String blockedUsersLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your blocked users right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -865,6 +865,9 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get commentsCancelEdit => 'Cancel edit';
+
+  @override
   String get commentsCancelReply => 'Cancel reply';
 
   @override
@@ -884,6 +887,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get commentsCloseTooltip => 'Close comments';
 
   @override
+  String get commentsCopied => 'Copied';
+
+  @override
   String get commentsDeleteBody => 'Replies under it will be removed too.';
 
   @override
@@ -891,6 +897,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get commentsDeleteTooltip => 'Delete comment';
+
+  @override
+  String get commentsEdit => 'Edit';
+
+  @override
+  String get commentsEditHint => 'Edit comment…';
+
+  @override
+  String get commentsEditingBanner => 'Editing comment';
 
   @override
   String get commentsEmojiTooltip => 'Emoji';
@@ -902,16 +917,43 @@ class AppLocalizationsEn extends AppLocalizations {
   String get commentsEmptyTitle => 'No comments yet';
 
   @override
+  String get commentsErrCopy => 'Couldn\'t copy comment';
+
+  @override
   String get commentsErrDelete => 'Couldn\'t delete comment';
 
   @override
+  String get commentsErrEdit => 'Couldn\'t save edit';
+
+  @override
   String get commentsErrPost => 'Couldn\'t post comment';
+
+  @override
+  String get commentsErrReact => 'Couldn\'t react';
+
+  @override
+  String get commentsErrShare => 'Couldn\'t share comment';
+
+  @override
+  String get commentsForward => 'Forward';
 
   @override
   String get commentsHintComment => 'Add a comment…';
 
   @override
   String get commentsHintReply => 'Write your reply…';
+
+  @override
+  String get commentsMenuCopy => 'Copy text';
+
+  @override
+  String get commentsMenuReact => 'React';
+
+  @override
+  String get commentsMenuReply => 'Reply';
+
+  @override
+  String get commentsMenuStaffDelete => 'Moderate / delete (staff)';
 
   @override
   String commentsOpenProfile(String name) {
@@ -923,7 +965,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Admin delete is gated on the moderate_content staff permission. Ask a super-admin to grant it to your role.';
 
   @override
-  String get commentsPermRubric => 'MISSING PERMISSION';
+  String get commentsPermRubric => 'NOT ALLOWED';
 
   @override
   String get commentsPermTitle => 'Need the moderate_content perm';
@@ -1104,6 +1146,24 @@ class AppLocalizationsEn extends AppLocalizations {
   String get composeErrUpload => 'Uploading reel';
 
   @override
+  String get composeFmtBold => 'Bold';
+
+  @override
+  String get composeFmtCode => 'Code';
+
+  @override
+  String get composeFmtItalic => 'Italic';
+
+  @override
+  String get composeFmtQuote => 'Quote';
+
+  @override
+  String get composeFmtSpoiler => 'Spoiler';
+
+  @override
+  String get composeFmtStrike => 'Strikethrough';
+
+  @override
   String get composeHintPost => 'What do you want to share?';
 
   @override
@@ -1245,7 +1305,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String connectionsLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your connections right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -1318,7 +1378,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Events can\'t be scheduled in the past. Tap the date / time row to pick when this event starts.';
 
   @override
-  String get createEventErrStartRubric => 'START TIME NEEDED';
+  String get createEventErrStartRubric => 'ADD A START TIME';
 
   @override
   String get createEventErrStartTitle => 'Pick a future start time';
@@ -1328,7 +1388,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Give your event a short name. This is what shows up on the Events screen and on the feed card for public events.';
 
   @override
-  String get createEventErrTitleRubric => 'TITLE REQUIRED';
+  String get createEventErrTitleRubric => 'ADD A TITLE';
 
   @override
   String get createEventErrTitleTitle => 'Add a title';
@@ -1530,7 +1590,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Give your lobby a short name. This is what shows up on the Lobbies screen and in the push notification.';
 
   @override
-  String get createLobbyErrTitleRubric => 'TITLE REQUIRED';
+  String get createLobbyErrTitleRubric => 'ADD A TITLE';
 
   @override
   String get createLobbyErrTitleTitle => 'Add a title';
@@ -1687,7 +1747,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String dateCheckinLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your check-in right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -1833,6 +1893,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dmChatErrDelete => 'Couldn\'t delete message';
 
   @override
+  String get dmChatErrReact => 'Couldn\'t react';
+
+  @override
   String get dmChatErrSaveEdit => 'Couldn\'t save edit';
 
   @override
@@ -1850,7 +1913,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String dmChatLoadError(String error) {
-    return 'Couldn\'t load messages: $error';
+    return 'We couldn\'t load these messages right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -1910,6 +1973,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dmChatWarnUser => 'Warn this user';
 
   @override
+  String get dmReactAllEmojisTooltip => 'All emojis';
+
+  @override
   String get dmsAttachGif => '🎞️ GIF';
 
   @override
@@ -1939,7 +2005,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String dmsLoadError(String error) {
-    return 'Couldn\'t load conversations: $error';
+    return 'We couldn\'t load your conversations right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -2047,6 +2113,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get editProfileCropBanner => 'Crop banner';
 
   @override
+  String get editProfileCustomIdentityHint => 'e.g. lesbian + femme';
+
+  @override
+  String get editProfileCustomIdentityLabel => 'Custom identity';
+
+  @override
+  String get editProfileCustomInterestsHint => 'e.g. anime, k-pop, climbing';
+
+  @override
+  String get editProfileCustomInterestsLabel =>
+      'Custom interests (comma-separated)';
+
+  @override
   String get editProfileCustomPronounsHint => 'e.g. xe/xem';
 
   @override
@@ -2070,7 +2149,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Use letters, numbers, and underscores only. Your handle is what others type after @ to mention you.';
 
   @override
-  String get editProfileHandleInvalidRubric => 'HANDLE INVALID';
+  String get editProfileHandleInvalidRubric => 'CHECK YOUR HANDLE';
 
   @override
   String get editProfileHandleInvalidTitle => 'Handle must be 3 to 24 chars';
@@ -2094,7 +2173,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Your display name is what shows up on your profile, in chat, and in mentions.';
 
   @override
-  String get editProfileNameRequiredRubric => 'DISPLAY NAME REQUIRED';
+  String get editProfileNameRequiredRubric => 'ADD A DISPLAY NAME';
 
   @override
   String get editProfileNameRequiredTitle => 'Add a display name';
@@ -2149,12 +2228,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String emojiPickerFavsLoadError(String error) {
-    return 'Couldn\'t load favourites: $error';
+    return 'We couldn\'t load your favourites right now. Try again in a moment. ($error)';
   }
 
   @override
   String emojiPickerGifsLoadError(String error) {
-    return 'Couldn\'t load GIFs: $error';
+    return 'We couldn\'t load GIFs right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -2178,7 +2257,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String emojiPickerLoadError(String error) {
-    return 'Couldn\'t load emojis: $error';
+    return 'We couldn\'t load emojis right now. Try again in a moment. ($error)';
+  }
+
+  @override
+  String emojiPickerNoCustomMatch(String query) {
+    return 'No custom emojis match \"$query\".';
+  }
+
+  @override
+  String emojiPickerNoEmojiMatch(String query) {
+    return 'No emojis match \"$query\".';
   }
 
   @override
@@ -2197,7 +2286,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get emojiPickerNoTrending => 'No trending GIFs right now.';
 
   @override
+  String get emojiPickerSearchCustom => 'Search custom emojis';
+
+  @override
+  String get emojiPickerSearchEmojis => 'Search emojis';
+
+  @override
   String get emojiPickerSearchGifs => 'Search GIFs';
+
+  @override
+  String get emojiPickerSectionThisGroup => 'THIS GROUP';
 
   @override
   String get emojiPickerShowTrending => 'Show trending';
@@ -2210,9 +2308,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get emojiPickerTabGifs => 'GIFS';
-
-  @override
-  String get emojiPickerTabThisGroup => 'THIS GROUP';
 
   @override
   String get emojiPickerVipBody =>
@@ -2245,7 +2340,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String eventDetailErrAttendees(String error) {
-    return 'Couldn\'t load attendees: $error';
+    return 'We couldn\'t load the guest list right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -2320,7 +2415,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String eventsScreenLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load events right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -2435,7 +2530,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String feedbackDetailCommentsLoadError(String error) {
-    return 'Couldn\'t load comments: $error';
+    return 'We couldn\'t load the comments right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -2550,7 +2645,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String feedbackLoadError(String error) {
-    return 'Couldn\'t load feedback: $error';
+    return 'We couldn\'t load feedback right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -2743,7 +2838,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String friendRequestsLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your friend requests right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -2810,7 +2905,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String friendsListLoadError(String error) {
-    return 'Could not load friends: $error';
+    return 'We couldn\'t load your friends right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -2888,7 +2983,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupChatLoadError(String error) {
-    return 'Couldn\'t load chat: $error';
+    return 'We couldn\'t load this chat right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -2934,7 +3029,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupChatRecordingWarnFailed(String error) {
-    return 'Recording warning failed to post: $error';
+    return 'We couldn\'t post the recording warning just now. ($error)';
   }
 
   @override
@@ -2963,7 +3058,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupChatScreenshotWarnFailed(String error) {
-    return 'Screenshot warning failed to post: $error';
+    return 'We couldn\'t post the screenshot warning just now. ($error)';
   }
 
   @override
@@ -3000,15 +3095,27 @@ class AppLocalizationsEn extends AppLocalizations {
   String get groupCommentsErrDelete => 'Couldn\'t delete comment';
 
   @override
+  String get groupCommentsErrEdit => 'Couldn\'t save edit';
+
+  @override
   String get groupCommentsErrPost => 'Couldn\'t post comment';
+
+  @override
+  String get groupCommentsErrReact => 'Couldn\'t react';
 
   @override
   String get groupCommentsHint => 'Write a comment…';
 
   @override
   String groupCommentsLoadError(String error) {
-    return 'Couldn\'t load comments: $error';
+    return 'We couldn\'t load the comments right now. Try again in a moment. ($error)';
   }
+
+  @override
+  String get groupCommentsMenuMore => 'More';
+
+  @override
+  String get groupCommentsMenuReport => 'Report';
 
   @override
   String groupCommentsOpenProfileA11y(String name) {
@@ -3128,7 +3235,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupDetailLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load this group right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -3160,7 +3267,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Group moderation actions are gated on the suspend_groups staff permission. Ask a super-admin to grant it from the staff role tools.';
 
   @override
-  String get groupDetailPermRubric => 'MISSING PERMISSION';
+  String get groupDetailPermRubric => 'NOT ALLOWED';
 
   @override
   String get groupDetailPermTitle => 'Need the suspend_groups perm';
@@ -3192,7 +3299,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupDetailsTabLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load these details right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -3259,7 +3366,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupEventsTabLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load these events right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -3316,7 +3423,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupNotifSettingsLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your notification settings right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -3347,7 +3454,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupNotifSettingsOverridesError(String error) {
-    return 'Could not load overrides: $error';
+    return 'We couldn\'t load your overrides right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -3470,7 +3577,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupPostsLoadError(String error) {
-    return 'Couldn\'t load posts: $error';
+    return 'We couldn\'t load these posts right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -3537,7 +3644,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupRoleInviteLoadError(String error) {
-    return 'Could not load this invite.\n$error';
+    return 'We couldn\'t load this invite right now. Try again in a moment.\n($error)';
   }
 
   @override
@@ -3792,37 +3899,37 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupSettingsErrLoadAuditLog(String error) {
-    return 'Couldn\'t load audit log: $error';
+    return 'We couldn\'t load the audit log right now. Try again in a moment. ($error)';
   }
 
   @override
   String groupSettingsErrLoadEmojis(String error) {
-    return 'Couldn\'t load emojis: $error';
+    return 'We couldn\'t load these emojis right now. Try again in a moment. ($error)';
   }
 
   @override
   String groupSettingsErrLoadGroup(String error) {
-    return 'Couldn\'t load group: $error';
+    return 'We couldn\'t load this group right now. Try again in a moment. ($error)';
   }
 
   @override
   String groupSettingsErrLoadHistory(String error) {
-    return 'Couldn\'t load history: $error';
+    return 'We couldn\'t load the history right now. Try again in a moment. ($error)';
   }
 
   @override
   String groupSettingsErrLoadInvites(String error) {
-    return 'Couldn\'t load invites: $error';
+    return 'We couldn\'t load the invites right now. Try again in a moment. ($error)';
   }
 
   @override
   String groupSettingsErrLoadRoles(String error) {
-    return 'Couldn\'t load roles: $error';
+    return 'We couldn\'t load the roles right now. Try again in a moment. ($error)';
   }
 
   @override
   String groupSettingsErrLoadViolations(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load these violations right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -4350,7 +4457,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupsLoadError(String error) {
-    return 'Error: $error';
+    return 'We couldn\'t load your groups right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -4453,7 +4560,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String groupTransferInviteLoadError(String error) {
-    return 'Could not load this transfer.\n$error';
+    return 'We couldn\'t load this transfer right now. Try again in a moment.\n($error)';
   }
 
   @override
@@ -4596,7 +4703,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String icebreakerQDLoadError(String error) {
-    return 'Couldn\'t load answers: $error';
+    return 'We couldn\'t load the answers right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -4802,7 +4909,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String icebreakersGenericLoadError(String error) {
-    return 'Couldn\'t load: $error';
+    return 'We couldn\'t load this right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -4991,7 +5098,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String icebreakerThreadRepliesError(String error) {
-    return 'Couldn\'t load replies: $error';
+    return 'We couldn\'t load the replies right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -5372,12 +5479,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String lobbyRoomErrReset(String error) {
-    return 'Could not reset: $error';
+    return 'We couldn\'t reset that just now. Try again in a moment. ($error)';
   }
 
   @override
   String lobbyRoomErrSetTrack(String error) {
-    return 'Could not set track: $error';
+    return 'We couldn\'t change the track just now. Try again in a moment. ($error)';
   }
 
   @override
@@ -5385,20 +5492,26 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String lobbyRoomErrToggleMic(String error) {
-    return 'Couldn\'t toggle mic: $error';
+    return 'We couldn\'t switch your mic just now. Try again in a moment. ($error)';
   }
+
+  @override
+  String get lobbyRoomErrToggleMicOp => 'Couldn\'t switch your mic';
 
   @override
   String get lobbyRoomErrToggleMusic => 'Couldn\'t toggle music';
 
   @override
   String lobbyRoomErrUpdateHand(String error) {
-    return 'Couldn\'t update hand: $error';
+    return 'We couldn\'t update your raised hand just now. Try again in a moment. ($error)';
   }
 
   @override
+  String get lobbyRoomErrUpdateHandOp => 'Couldn\'t update your raised hand';
+
+  @override
   String lobbyRoomErrUpload(String error) {
-    return 'Upload failed: $error';
+    return 'Your upload didn\'t go through. Try again in a moment. ($error)';
   }
 
   @override
@@ -5759,7 +5872,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String membersLoadError(String error) {
-    return 'Couldn\'t load members: $error';
+    return 'We couldn\'t load the members right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -5922,7 +6035,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String newTicketGroupsError(String error) {
-    return 'Couldn\'t load your groups: $error';
+    return 'We couldn\'t load your groups right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -6448,6 +6561,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notifKindGroupMessageTitle => 'New group chat messages';
 
   @override
+  String get notifKindGroupPostCommentReactionSubtitle =>
+      'Someone reacted to a comment you wrote on a group post.';
+
+  @override
+  String get notifKindGroupPostCommentReactionTitle =>
+      'Reactions on your group post comments';
+
+  @override
   String get notifKindGroupPostCommentSubtitle =>
       'Someone commented on a post you wrote in a group.';
 
@@ -6490,6 +6611,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get notifKindMentionTitle => 'Mentions in posts and comments';
+
+  @override
+  String get notifKindPostCommentReactionSubtitle =>
+      'Someone reacted to a comment you wrote on a feed post.';
+
+  @override
+  String get notifKindPostCommentReactionTitle =>
+      'Reactions on your post comments';
 
   @override
   String get notifKindPostCommentSubtitle =>
@@ -6568,6 +6697,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notifKindTrustedCircleRequestTitle => 'Trusted Circle invites';
 
   @override
+  String get notifKindWeeklyPromptReplyReactionSubtitle =>
+      'Someone reacted to a reply you wrote in a Weekly Prompt thread.';
+
+  @override
+  String get notifKindWeeklyPromptReplyReactionTitle =>
+      'Reactions on your Weekly Prompt replies';
+
+  @override
   String get notifKindWeeklyPromptReplyReceivedSubtitle =>
       'Someone replied to a response you posted under the Weekly Prompt.';
 
@@ -6577,7 +6714,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String notifLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your notifications right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -6687,7 +6824,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String notifSettingsLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your notification settings right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -6883,7 +7020,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String onboardingSaveError(String error) {
-    return 'Could not save: $error';
+    return 'We couldn\'t save that just now. Try again in a moment. ($error)';
   }
 
   @override
@@ -6902,6 +7039,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onbOptAlly => 'ally';
+
+  @override
+  String get onbOptAnime => 'anime';
 
   @override
   String get onbOptAnyPronouns => 'any pronouns';
@@ -6926,6 +7066,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onbOptBooks => 'books';
+
+  @override
+  String get onbOptClimbing => 'climbing';
+
+  @override
+  String get onbOptCoffee => 'coffee';
+
+  @override
+  String get onbOptComedy => 'comedy';
 
   @override
   String get onbOptCooking => 'cooking';
@@ -6976,16 +7125,28 @@ class AppLocalizationsEn extends AppLocalizations {
   String get onbOptHiking => 'hiking';
 
   @override
+  String get onbOptHistory => 'history';
+
+  @override
   String get onbOptIntersex => 'intersex';
 
   @override
   String get onbOptKnitting => 'knitting';
 
   @override
+  String get onbOptKpop => 'k-pop';
+
+  @override
   String get onbOptLesbian => 'lesbian';
 
   @override
+  String get onbOptMeditation => 'meditation';
+
+  @override
   String get onbOptMusic => 'music';
+
+  @override
+  String get onbOptNature => 'nature';
 
   @override
   String get onbOptNonbinary => 'nonbinary';
@@ -7000,7 +7161,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get onbOptPansexual => 'pansexual';
 
   @override
+  String get onbOptPets => 'pets';
+
+  @override
   String get onbOptPhotography => 'photography';
+
+  @override
+  String get onbOptPodcasts => 'podcasts';
 
   @override
   String get onbOptPreferNotToSay => 'prefer not to say';
@@ -7012,13 +7179,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get onbOptQuestioning => 'questioning';
 
   @override
+  String get onbOptScience => 'science';
+
+  @override
   String get onbOptSheHer => 'she/her';
 
   @override
   String get onbOptSheThey => 'she/they';
 
   @override
+  String get onbOptSkating => 'skating';
+
+  @override
   String get onbOptSports => 'sports';
+
+  @override
+  String get onbOptStreaming => 'streaming';
+
+  @override
+  String get onbOptTabletop => 'tabletop';
 
   @override
   String get onbOptTech => 'tech';
@@ -7037,6 +7216,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onbOptTwoSpirit => 'two-spirit';
+
+  @override
+  String get onbOptVolunteering => 'volunteering';
 
   @override
   String get onbOptWriting => 'writing';
@@ -7189,11 +7371,41 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String postCardErrLike(String error) {
-    return 'Couldn\'t update like: $error';
+    return 'We couldn\'t update your like just now. Try again in a moment. ($error)';
   }
 
   @override
+  String get postCardErrLikeOp => 'Couldn\'t update your like';
+
+  @override
   String get postCardErrSave => 'Couldn\'t save post';
+
+  @override
+  String get postCardErrShareOp => 'Couldn\'t share post';
+
+  @override
+  String get postCardMenuCopy => 'Copy text';
+
+  @override
+  String get postCardMenuForward => 'Forward';
+
+  @override
+  String get postCardMenuHeart => 'Heart';
+
+  @override
+  String get postCardMenuReply => 'Reply';
+
+  @override
+  String get postCardMenuReport => 'Report';
+
+  @override
+  String get postCardMenuShare => 'Share';
+
+  @override
+  String get postCardMenuStaffModerate => 'Moderate / delete (staff)';
+
+  @override
+  String get postCardMenuUnheart => 'Remove heart';
 
   @override
   String postCardOpenProfile(String name) {
@@ -7208,7 +7420,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Admin delete is gated on the moderate_content staff permission. Ask a super-admin to grant it to your role.';
 
   @override
-  String get postCardPermRubric => 'MISSING PERMISSION';
+  String get postCardPermRubric => 'NOT ALLOWED';
 
   @override
   String get postCardPermTitle => 'Need the moderate_content perm';
@@ -7227,6 +7439,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get postCardRemovedTitle => 'Already removed by Luney moderation';
 
   @override
+  String get postCardReportLabel => 'this post';
+
+  @override
   String get postCardSpoilerOff => 'Photo loads in full.';
 
   @override
@@ -7235,7 +7450,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String postDetailLoadError(String error) {
-    return 'Could not load post: $error';
+    return 'We couldn\'t load this post right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -7570,7 +7785,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String profileScreenLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load this profile right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -7707,12 +7922,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String profileSheetErrLoadGroupProfile(String error) {
-    return 'Couldn\'t load this group\'s profile.\n$error';
+    return 'We couldn\'t load this group\'s profile right now. Try again in a moment.\n($error)';
   }
 
   @override
   String profileSheetErrLoadRoles(String error) {
-    return 'Couldn\'t load roles: $error';
+    return 'We couldn\'t load the roles right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -8550,7 +8765,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String reportDetailLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load this report right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -8792,7 +9007,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String reportsInboxLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your reports right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -8932,7 +9147,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String reviewPoliciesLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load the policies right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -9285,7 +9500,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String searchFailed(String error) {
-    return 'Search failed: $error';
+    return 'Your search didn\'t go through. Try again in a moment. ($error)';
   }
 
   @override
@@ -9336,7 +9551,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String securityLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your security settings right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -9626,7 +9841,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Your device doesn\'t have an app installed that can handle this link. Try a different share destination.';
 
   @override
-  String get shareSheetNoHandlerRubric => 'NO HANDLER';
+  String get shareSheetNoHandlerRubric => 'CAN\'T OPEN THIS';
 
   @override
   String get shareSheetNoHandlerTitle => 'Couldn\'t open the share link';
@@ -10191,7 +10406,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String staffInboxLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load the inbox right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -10309,8 +10524,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String ticketDetailErrReact(String error) {
-    return 'Couldn\'t react: $error';
+    return 'We couldn\'t add your reaction just now. Try again in a moment. ($error)';
   }
+
+  @override
+  String get ticketDetailErrReactOp => 'Couldn\'t add your reaction';
 
   @override
   String get ticketDetailErrSendReply => 'Couldn\'t send reply';
@@ -10361,7 +10579,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String ticketDetailLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load this ticket right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -10436,7 +10654,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String ticketsLoadError(String error) {
-    return 'Could not load: $error';
+    return 'We couldn\'t load your tickets right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -10898,6 +11116,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get weeklyPromptThreadDeleteTitle => 'Delete reply?';
 
   @override
+  String get weeklyPromptThreadEditErrorOp => 'Couldn\'t save your edit';
+
+  @override
   String get weeklyPromptThreadGoBack => 'Go back';
 
   @override
@@ -10912,7 +11133,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String weeklyPromptThreadRepliesError(String error) {
-    return 'Couldn\'t load replies: $error';
+    return 'We couldn\'t load the replies right now. Try again in a moment. ($error)';
   }
 
   @override
@@ -10928,6 +11149,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get weeklyPromptThreadReportLabel => 'this reply';
+
+  @override
+  String get weeklyPromptThreadReportResponseLabel => 'this response';
 
   @override
   String get weeklyPromptThreadSend => 'Send';

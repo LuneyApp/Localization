@@ -75,7 +75,7 @@
   "@accountRestrictionsLifts": {
     "placeholders": { "time": { "type": "String" } }
   },
-  "accountRestrictionsLoadError": "Could not load: {error}",
+  "accountRestrictionsLoadError": "We couldn't load your account restrictions right now. Try again in a moment. ({error})",
   "@accountRestrictionsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -107,7 +107,7 @@
     "placeholders": { "count": { "type": "int" } }
   },
   "accountReviewsHelp": "Reviews are part of Luney's safety operations. They happen when a report or investigation requires staff to see context beyond what shows up in a single reported message. Every action taken during a review is logged in our internal audit trail. For more information about a specific review, contact privacy@luneyapp.com. Formal data-access requests are processed within 30 days per our Privacy Policy.",
-  "accountReviewsLoadError": "Could not load: {error}",
+  "accountReviewsLoadError": "We couldn't load your account reviews right now. Try again in a moment. ({error})",
   "@accountReviewsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -129,7 +129,7 @@
   "@accountViolationsLifted": {
     "placeholders": { "ts": { "type": "String" } }
   },
-  "accountViolationsLoadError": "Could not load: {error}",
+  "accountViolationsLoadError": "We couldn't load your account violations right now. Try again in a moment. ({error})",
   "@accountViolationsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -244,7 +244,7 @@
   "anniversaryCardFriendsSince": "Friends since",
   "anniversaryCardMemberSince": "Member since",
   "anniversaryCardOnLuneySince": "On Luney since",
-  "anniversaryCardScreenLoadError": "Could not load card: {error}",
+  "anniversaryCardScreenLoadError": "We couldn't load this card right now. Try again in a moment. ({error})",
   "@anniversaryCardScreenLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -369,7 +369,7 @@
   "appShellWelcomeBackTitle": "Welcome back",
 
   "blockedUsersEmpty": "You haven't blocked anyone",
-  "blockedUsersLoadError": "Could not load: {error}",
+  "blockedUsersLoadError": "We couldn't load your blocked users right now. Try again in a moment. ({error})",
   "@blockedUsersLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -415,28 +415,42 @@
     "placeholders": { "name": { "type": "String" } }
   },
 
+  "commentsCancelEdit": "Cancel edit",
   "commentsCancelReply": "Cancel reply",
   "commentsClosedDefault": "You can't comment on this post.",
   "commentsClosedDisabled": "Comments are turned off for this post.",
   "commentsClosedFoF": "Only the author's friends and their friends can comment.",
   "commentsClosedFriends": "Only the author's friends can comment.",
   "commentsCloseTooltip": "Close comments",
+  "commentsCopied": "Copied",
   "commentsDeleteBody": "Replies under it will be removed too.",
   "commentsDeleteTitle": "Delete this comment?",
   "commentsDeleteTooltip": "Delete comment",
+  "commentsEdit": "Edit",
+  "commentsEditHint": "Edit comment…",
+  "commentsEditingBanner": "Editing comment",
   "commentsEmojiTooltip": "Emoji",
   "commentsEmptyBody": "Be the first to say something kind.",
   "commentsEmptyTitle": "No comments yet",
+  "commentsErrCopy": "Couldn't copy comment",
   "commentsErrDelete": "Couldn't delete comment",
+  "commentsErrEdit": "Couldn't save edit",
   "commentsErrPost": "Couldn't post comment",
+  "commentsErrReact": "Couldn't react",
+  "commentsErrShare": "Couldn't share comment",
+  "commentsForward": "Forward",
   "commentsHintComment": "Add a comment…",
   "commentsHintReply": "Write your reply…",
+  "commentsMenuCopy": "Copy text",
+  "commentsMenuReact": "React",
+  "commentsMenuReply": "Reply",
+  "commentsMenuStaffDelete": "Moderate / delete (staff)",
   "commentsOpenProfile": "Open {name}'s profile",
   "@commentsOpenProfile": {
     "placeholders": { "name": { "type": "String" } }
   },
   "commentsPermBody": "Admin delete is gated on the moderate_content staff permission. Ask a super-admin to grant it to your role.",
-  "commentsPermRubric": "MISSING PERMISSION",
+  "commentsPermRubric": "NOT ALLOWED",
   "commentsPermTitle": "Need the moderate_content perm",
   "commentsPostSemantic": "Post comment",
   "commentsReply": "Reply",
@@ -506,6 +520,12 @@
   "composeErrPrepOverlays": "Preparing overlays for the video",
   "composeErrTrim": "Trimming reel",
   "composeErrUpload": "Uploading reel",
+  "composeFmtBold": "Bold",
+  "composeFmtCode": "Code",
+  "composeFmtItalic": "Italic",
+  "composeFmtQuote": "Quote",
+  "composeFmtSpoiler": "Spoiler",
+  "composeFmtStrike": "Strikethrough",
   "composeHintPost": "What do you want to share?",
   "composeHintReel": "What's your reel about?",
   "composeMarkSpoiler": "Mark as spoiler",
@@ -557,7 +577,7 @@
     "placeholders": { "provider": { "type": "String" } }
   },
   "connectionsLinkedTitle": "Linked",
-  "connectionsLoadError": "Could not load: {error}",
+  "connectionsLoadError": "We couldn't load your connections right now. Try again in a moment. ({error})",
   "@connectionsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -598,10 +618,10 @@
   "createEventDestPublicSubtitle": "Visible on the main events screen.",
   "createEventErrCreate": "Couldn't create event",
   "createEventErrStartBody": "Events can't be scheduled in the past. Tap the date / time row to pick when this event starts.",
-  "createEventErrStartRubric": "START TIME NEEDED",
+  "createEventErrStartRubric": "ADD A START TIME",
   "createEventErrStartTitle": "Pick a future start time",
   "createEventErrTitleBody": "Give your event a short name. This is what shows up on the Events screen and on the feed card for public events.",
-  "createEventErrTitleRubric": "TITLE REQUIRED",
+  "createEventErrTitleRubric": "ADD A TITLE",
   "createEventErrTitleTitle": "Add a title",
   "createEventGroupsSectionLabel": "GROUPS WHERE YOU'RE ADMIN OR MOD",
   "createEventGroupVisibilityNote": "Only members of {group} will see this event.",
@@ -682,7 +702,7 @@
   "createLobbyDestPublicSubtitle": "Open lobby. No notifications.",
   "createLobbyErrStart": "Couldn't start lobby",
   "createLobbyErrTitleBody": "Give your lobby a short name. This is what shows up on the Lobbies screen and in the push notification.",
-  "createLobbyErrTitleRubric": "TITLE REQUIRED",
+  "createLobbyErrTitleRubric": "ADD A TITLE",
   "createLobbyErrTitleTitle": "Add a title",
   "createLobbyGroupNote": "Members of {group} get a notification when you go live.",
   "@createLobbyGroupNote": {
@@ -745,7 +765,7 @@
   "dateCheckinHowBody": "Set a deadline before going somewhere new. If you don't tap \"I'm safe\" by then, your Trusted Circle gets pinged with a \"check on Zoey, meeting Sam at Beans Cafe\" alert. You can extend any time, and only your Circle sees it.",
   "dateCheckinHowTitle": "How it works",
   "dateCheckinImSafe": "I'm safe",
-  "dateCheckinLoadError": "Could not load: {error}",
+  "dateCheckinLoadError": "We couldn't load your check-in right now. Try again in a moment. ({error})",
   "@dateCheckinLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -797,12 +817,13 @@
   "dmChatEmoji": "Emoji",
   "dmChatEmpty": "No messages yet. Say hi 👋",
   "dmChatErrDelete": "Couldn't delete message",
+  "dmChatErrReact": "Couldn't react",
   "dmChatErrSaveEdit": "Couldn't save edit",
   "dmChatErrSend": "Couldn't send: your message is back in the box, tap send to try again",
   "dmChatErrSendGif": "Couldn't send the GIF",
   "dmChatGone": "This conversation is no longer available.",
   "dmChatKeyboard": "Keyboard",
-  "dmChatLoadError": "Couldn't load messages: {error}",
+  "dmChatLoadError": "We couldn't load these messages right now. Try again in a moment. ({error})",
   "@dmChatLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -829,6 +850,7 @@
   "dmChatThisUser": "this user",
   "dmChatTitleFallback": "Message",
   "dmChatWarnUser": "Warn this user",
+  "dmReactAllEmojisTooltip": "All emojis",
 
   "dmsAttachGif": "🎞️ GIF",
   "dmsAttachment": "📎 Attachment",
@@ -839,7 +861,7 @@
   "dmsDeleteTitle": "Delete this conversation?",
   "dmsEmptyTitle": "No conversations yet.",
   "dmsErrDelete": "Couldn't delete thread",
-  "dmsLoadError": "Couldn't load conversations: {error}",
+  "dmsLoadError": "We couldn't load your conversations right now. Try again in a moment. ({error})",
   "@dmsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -887,6 +909,10 @@
   "editProfileChangeAvatar": "Change avatar",
   "editProfileCropAvatar": "Crop avatar",
   "editProfileCropBanner": "Crop banner",
+  "editProfileCustomIdentityHint": "e.g. lesbian + femme",
+  "editProfileCustomIdentityLabel": "Custom identity",
+  "editProfileCustomInterestsHint": "e.g. anime, k-pop, climbing",
+  "editProfileCustomInterestsLabel": "Custom interests (comma-separated)",
   "editProfileCustomPronounsHint": "e.g. xe/xem",
   "editProfileCustomPronounsLabel": "Custom pronouns",
   "editProfileDisplayNameHint": "Your name",
@@ -894,7 +920,7 @@
   "editProfileEditBanner": "Edit banner",
   "editProfileHandleHint": "letters, numbers, underscores · 3-24 chars",
   "editProfileHandleInvalidBody": "Use letters, numbers, and underscores only. Your handle is what others type after @ to mention you.",
-  "editProfileHandleInvalidRubric": "HANDLE INVALID",
+  "editProfileHandleInvalidRubric": "CHECK YOUR HANDLE",
   "editProfileHandleInvalidTitle": "Handle must be 3 to 24 chars",
   "editProfileHandleLabel": "Handle",
   "editProfileHandleTakenBody": "Another account is already using @{handle}. Pick a different one.",
@@ -904,7 +930,7 @@
   "editProfileHandleTakenRubric": "HANDLE TAKEN",
   "editProfileHandleTakenTitle": "That handle is taken",
   "editProfileNameRequiredBody": "Your display name is what shows up on your profile, in chat, and in mentions.",
-  "editProfileNameRequiredRubric": "DISPLAY NAME REQUIRED",
+  "editProfileNameRequiredRubric": "ADD A DISPLAY NAME",
   "editProfileNameRequiredTitle": "Add a display name",
   "editProfileNameStyle": "Name style",
   "editProfileNameStyleErrorOp": "Couldn't save name style",
@@ -922,11 +948,11 @@
 
   "emojiPickerCrossGroupEmpty": "Join more groups to use their custom emojis here.",
   "emojiPickerFavorites": "Favourites",
-  "emojiPickerFavsLoadError": "Couldn't load favourites: {error}",
+  "emojiPickerFavsLoadError": "We couldn't load your favourites right now. Try again in a moment. ({error})",
   "@emojiPickerFavsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
-  "emojiPickerGifsLoadError": "Couldn't load GIFs: {error}",
+  "emojiPickerGifsLoadError": "We couldn't load GIFs right now. Try again in a moment. ({error})",
   "@emojiPickerGifsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -938,9 +964,17 @@
   "@emojiPickerHiddenFavs": {
     "placeholders": { "count": { "type": "int" } }
   },
-  "emojiPickerLoadError": "Couldn't load emojis: {error}",
+  "emojiPickerLoadError": "We couldn't load emojis right now. Try again in a moment. ({error})",
   "@emojiPickerLoadError": {
     "placeholders": { "error": { "type": "String" } }
+  },
+  "emojiPickerNoCustomMatch": "No custom emojis match \"{query}\".",
+  "@emojiPickerNoCustomMatch": {
+    "placeholders": { "query": { "type": "String" } }
+  },
+  "emojiPickerNoEmojiMatch": "No emojis match \"{query}\".",
+  "@emojiPickerNoEmojiMatch": {
+    "placeholders": { "query": { "type": "String" } }
   },
   "emojiPickerNoFavsBody": "Tap the heart on any GIF to save it here for later.",
   "emojiPickerNoFavsTitle": "No favourites yet",
@@ -949,12 +983,14 @@
     "placeholders": { "query": { "type": "String" } }
   },
   "emojiPickerNoTrending": "No trending GIFs right now.",
+  "emojiPickerSearchCustom": "Search custom emojis",
+  "emojiPickerSearchEmojis": "Search emojis",
   "emojiPickerSearchGifs": "Search GIFs",
+  "emojiPickerSectionThisGroup": "THIS GROUP",
   "emojiPickerShowTrending": "Show trending",
   "emojiPickerTabCustom": "CUSTOM",
   "emojiPickerTabEmojis": "EMOJIS",
   "emojiPickerTabGifs": "GIFS",
-  "emojiPickerTabThisGroup": "THIS GROUP",
   "emojiPickerVipBody": "VIP members can use custom emojis from any public group, across every group they're in.",
   "emojiPickerVipTitle": "VIP only",
 
@@ -967,7 +1003,7 @@
   "@eventDetailCancelTitle": {
     "placeholders": { "title": { "type": "String" } }
   },
-  "eventDetailErrAttendees": "Couldn't load attendees: {error}",
+  "eventDetailErrAttendees": "We couldn't load the guest list right now. Try again in a moment. ({error})",
   "@eventDetailErrAttendees": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -999,7 +1035,7 @@
   "eventsScreenEmptyMineTitle": "No upcoming RSVPs",
   "eventsScreenFilterAll": "All upcoming",
   "eventsScreenFilterMine": "My RSVPs",
-  "eventsScreenLoadError": "Could not load: {error}",
+  "eventsScreenLoadError": "We couldn't load events right now. Try again in a moment. ({error})",
   "@eventsScreenLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1052,7 +1088,7 @@
     "placeholders": { "count": { "type": "int" } }
   },
   "feedbackDetailCommentsHeader": "Comments",
-  "feedbackDetailCommentsLoadError": "Couldn't load comments: {error}",
+  "feedbackDetailCommentsLoadError": "We couldn't load the comments right now. Try again in a moment. ({error})",
   "@feedbackDetailCommentsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1106,7 +1142,7 @@
   "feedbackDetailStaffModeTitle": "Reply as the Luney team",
   "feedbackDetailUnlikeSemantic": "Unlike comment",
   "feedbackDetailViewParentSemantic": "View the comment this replies to",
-  "feedbackLoadError": "Couldn't load feedback: {error}",
+  "feedbackLoadError": "We couldn't load feedback right now. Try again in a moment. ({error})",
   "@feedbackLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1176,7 +1212,7 @@
   "friendRequestsErrAccept": "Couldn't accept the friend request",
   "friendRequestsErrCancel": "Couldn't cancel the friend request",
   "friendRequestsErrDecline": "Couldn't decline the friend request",
-  "friendRequestsLoadError": "Could not load: {error}",
+  "friendRequestsLoadError": "We couldn't load your friend requests right now. Try again in a moment. ({error})",
   "@friendRequestsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1205,7 +1241,7 @@
   "friendsListEmptyOtherBody": "When they're connected with people, they'll show up here.",
   "friendsListEmptyOtherTitle": "No friends to show",
   "friendsListErrCircle": "Couldn't update Circle",
-  "friendsListLoadError": "Could not load friends: {error}",
+  "friendsListLoadError": "We couldn't load your friends right now. Try again in a moment. ({error})",
   "@friendsListLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1237,7 +1273,7 @@
   "groupChatErrSaveEdit": "Couldn't save edit",
   "groupChatErrSendGif": "Couldn't send GIF",
   "groupChatErrSendMessage": "Couldn't send message",
-  "groupChatLoadError": "Couldn't load chat: {error}",
+  "groupChatLoadError": "We couldn't load this chat right now. Try again in a moment. ({error})",
   "@groupChatLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1257,7 +1293,7 @@
   "@groupChatMuteLiftsIn": {
     "placeholders": { "remaining": { "type": "String" } }
   },
-  "groupChatRecordingWarnFailed": "Recording warning failed to post: {error}",
+  "groupChatRecordingWarnFailed": "We couldn't post the recording warning just now. ({error})",
   "@groupChatRecordingWarnFailed": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1274,7 +1310,7 @@
       "time": { "type": "String" }
     }
   },
-  "groupChatScreenshotWarnFailed": "Screenshot warning failed to post: {error}",
+  "groupChatScreenshotWarnFailed": "We couldn't post the screenshot warning just now. ({error})",
   "@groupChatScreenshotWarnFailed": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1289,12 +1325,16 @@
   "groupCommentsDeleteA11y": "Delete comment",
   "groupCommentsEmpty": "No comments yet. Be the first.",
   "groupCommentsErrDelete": "Couldn't delete comment",
+  "groupCommentsErrEdit": "Couldn't save edit",
   "groupCommentsErrPost": "Couldn't post comment",
+  "groupCommentsErrReact": "Couldn't react",
   "groupCommentsHint": "Write a comment…",
-  "groupCommentsLoadError": "Couldn't load comments: {error}",
+  "groupCommentsLoadError": "We couldn't load the comments right now. Try again in a moment. ({error})",
   "@groupCommentsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
+  "groupCommentsMenuMore": "More",
+  "groupCommentsMenuReport": "Report",
   "groupCommentsOpenProfileA11y": "Open {name}'s profile",
   "@groupCommentsOpenProfileA11y": {
     "placeholders": { "name": { "type": "String" } }
@@ -1347,7 +1387,7 @@
   "groupDetailJoin": "Join this group",
   "groupDetailJoinA11y": "Join this group",
   "groupDetailJoining": "Joining…",
-  "groupDetailLoadError": "Could not load: {error}",
+  "groupDetailLoadError": "We couldn't load this group right now. Try again in a moment. ({error})",
   "@groupDetailLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1360,7 +1400,7 @@
   "groupDetailNotAllowedRubric": "NOT ALLOWED",
   "groupDetailNotAllowedTitle": "Can't suspend the Staff Lounge",
   "groupDetailPermBody": "Group moderation actions are gated on the suspend_groups staff permission. Ask a super-admin to grant it from the staff role tools.",
-  "groupDetailPermRubric": "MISSING PERMISSION",
+  "groupDetailPermRubric": "NOT ALLOWED",
   "groupDetailPermTitle": "Need the suspend_groups perm",
   "groupDetailRulesLabel": "RULES",
   "groupDetailSettingsTooltip": "Group settings",
@@ -1370,7 +1410,7 @@
   "groupDetailsTabEditDetailsA11y": "Edit details",
   "groupDetailsTabEmptyAdmin": "Add a description and an About page so members know what this group is about. Tap \"Edit details\" below.",
   "groupDetailsTabEmptyMember": "No details yet.",
-  "groupDetailsTabLoadError": "Could not load: {error}",
+  "groupDetailsTabLoadError": "We couldn't load these details right now. Try again in a moment. ({error})",
   "@groupDetailsTabLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1404,7 +1444,7 @@
   "@groupEventsTabEmptyTitle": {
     "placeholders": { "group": { "type": "String" } }
   },
-  "groupEventsTabLoadError": "Could not load: {error}",
+  "groupEventsTabLoadError": "We couldn't load these events right now. Try again in a moment. ({error})",
   "@groupEventsTabLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1426,7 +1466,7 @@
   "groupNotifSettingsErrSave": "Couldn't save preference",
   "groupNotifSettingsInApp": "In-app",
   "groupNotifSettingsInfo": "Each kind defaults to your app-wide setting. Flip \"Override\" to set group-specific Push + In-app; works even if the kind is silenced globally.",
-  "groupNotifSettingsLoadError": "Could not load: {error}",
+  "groupNotifSettingsLoadError": "We couldn't load your notification settings right now. Try again in a moment. ({error})",
   "@groupNotifSettingsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1438,7 +1478,7 @@
   "groupNotifSettingsMuteTitle": "Mute this group?",
   "groupNotifSettingsOverrideOff": "Inheriting app-wide setting",
   "groupNotifSettingsOverrideOn": "Override app-wide setting",
-  "groupNotifSettingsOverridesError": "Could not load overrides: {error}",
+  "groupNotifSettingsOverridesError": "We couldn't load your overrides right now. Try again in a moment. ({error})",
   "@groupNotifSettingsOverridesError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1478,7 +1518,7 @@
   "groupPostsComposerHint": "Post to this group…",
   "groupPostsEmpty": "No posts yet. Write the first one.",
   "groupPostsErrPost": "Couldn't post to group",
-  "groupPostsLoadError": "Couldn't load posts: {error}",
+  "groupPostsLoadError": "We couldn't load these posts right now. Try again in a moment. ({error})",
   "@groupPostsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1513,7 +1553,7 @@
     }
   },
   "groupRoleInviteLater": "Later",
-  "groupRoleInviteLoadError": "Could not load this invite.\n{error}",
+  "groupRoleInviteLoadError": "We couldn't load this invite right now. Try again in a moment.\n({error})",
   "@groupRoleInviteLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1608,31 +1648,31 @@
   "groupSettingsErrDeleteEmoji": "Couldn't delete emoji",
   "groupSettingsErrDeleteGroup": "Couldn't delete the group",
   "groupSettingsErrDeleteRole": "Couldn't delete role",
-  "groupSettingsErrLoadAuditLog": "Couldn't load audit log: {error}",
+  "groupSettingsErrLoadAuditLog": "We couldn't load the audit log right now. Try again in a moment. ({error})",
   "@groupSettingsErrLoadAuditLog": {
     "placeholders": { "error": { "type": "String" } }
   },
-  "groupSettingsErrLoadEmojis": "Couldn't load emojis: {error}",
+  "groupSettingsErrLoadEmojis": "We couldn't load these emojis right now. Try again in a moment. ({error})",
   "@groupSettingsErrLoadEmojis": {
     "placeholders": { "error": { "type": "String" } }
   },
-  "groupSettingsErrLoadGroup": "Couldn't load group: {error}",
+  "groupSettingsErrLoadGroup": "We couldn't load this group right now. Try again in a moment. ({error})",
   "@groupSettingsErrLoadGroup": {
     "placeholders": { "error": { "type": "String" } }
   },
-  "groupSettingsErrLoadHistory": "Couldn't load history: {error}",
+  "groupSettingsErrLoadHistory": "We couldn't load the history right now. Try again in a moment. ({error})",
   "@groupSettingsErrLoadHistory": {
     "placeholders": { "error": { "type": "String" } }
   },
-  "groupSettingsErrLoadInvites": "Couldn't load invites: {error}",
+  "groupSettingsErrLoadInvites": "We couldn't load the invites right now. Try again in a moment. ({error})",
   "@groupSettingsErrLoadInvites": {
     "placeholders": { "error": { "type": "String" } }
   },
-  "groupSettingsErrLoadRoles": "Couldn't load roles: {error}",
+  "groupSettingsErrLoadRoles": "We couldn't load the roles right now. Try again in a moment. ({error})",
   "@groupSettingsErrLoadRoles": {
     "placeholders": { "error": { "type": "String" } }
   },
-  "groupSettingsErrLoadViolations": "Could not load: {error}",
+  "groupSettingsErrLoadViolations": "We couldn't load these violations right now. Try again in a moment. ({error})",
   "@groupSettingsErrLoadViolations": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1836,7 +1876,7 @@
   "groupSettingsWipeEmptyRubric": "NOTHING TO WIPE",
   "groupSettingsWipeEmptyTitle": "Chat was already empty",
 
-  "groupsLoadError": "Error: {error}",
+  "groupsLoadError": "We couldn't load your groups right now. Try again in a moment. ({error})",
   "@groupsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1896,7 +1936,7 @@
   "groupTransferInviteIntroFallback": "A Luney staff member",
   "groupTransferInviteInviterFallback": "the staff member who offered it",
   "groupTransferInviteLater": "Later",
-  "groupTransferInviteLoadError": "Could not load this transfer.\n{error}",
+  "groupTransferInviteLoadError": "We couldn't load this transfer right now. Try again in a moment.\n({error})",
   "@groupTransferInviteLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -1960,7 +2000,7 @@
   "icebreakerQDComposerHint": "type your answer…",
   "icebreakerQDEmptyOthers": "Nobody else answered this one. You're the only voice on the wall.",
   "icebreakerQDErrPost": "Couldn't post your answer",
-  "icebreakerQDLoadError": "Couldn't load answers: {error}",
+  "icebreakerQDLoadError": "We couldn't load the answers right now. Try again in a moment. ({error})",
   "@icebreakerQDLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -2052,7 +2092,7 @@
   "@icebreakersFilterSemantic": {
     "placeholders": { "label": { "type": "String" } }
   },
-  "icebreakersGenericLoadError": "Couldn't load: {error}",
+  "icebreakersGenericLoadError": "We couldn't load this right now. Try again in a moment. ({error})",
   "@icebreakersGenericLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -2134,7 +2174,7 @@
     "placeholders": { "name": { "type": "String" } }
   },
   "icebreakerThreadReplies": "REPLIES",
-  "icebreakerThreadRepliesError": "Couldn't load replies: {error}",
+  "icebreakerThreadRepliesError": "We couldn't load the replies right now. Try again in a moment. ({error})",
   "@icebreakerThreadRepliesError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -2316,25 +2356,27 @@
   "lobbyRoomErrNeedTitle": "Add a name for this track. We couldn't guess one from the URL.",
   "lobbyRoomErrPromote": "Couldn't promote to speaker",
   "lobbyRoomErrReadBytes": "Could not read file bytes.",
-  "lobbyRoomErrReset": "Could not reset: {error}",
+  "lobbyRoomErrReset": "We couldn't reset that just now. Try again in a moment. ({error})",
   "@lobbyRoomErrReset": {
     "placeholders": { "error": { "type": "String" } }
   },
-  "lobbyRoomErrSetTrack": "Could not set track: {error}",
+  "lobbyRoomErrSetTrack": "We couldn't change the track just now. Try again in a moment. ({error})",
   "@lobbyRoomErrSetTrack": {
     "placeholders": { "error": { "type": "String" } }
   },
   "lobbyRoomErrStart": "Couldn't start lobby",
-  "lobbyRoomErrToggleMic": "Couldn't toggle mic: {error}",
+  "lobbyRoomErrToggleMic": "We couldn't switch your mic just now. Try again in a moment. ({error})",
   "@lobbyRoomErrToggleMic": {
     "placeholders": { "error": { "type": "String" } }
   },
+  "lobbyRoomErrToggleMicOp": "Couldn't switch your mic",
   "lobbyRoomErrToggleMusic": "Couldn't toggle music",
-  "lobbyRoomErrUpdateHand": "Couldn't update hand: {error}",
+  "lobbyRoomErrUpdateHand": "We couldn't update your raised hand just now. Try again in a moment. ({error})",
   "@lobbyRoomErrUpdateHand": {
     "placeholders": { "error": { "type": "String" } }
   },
-  "lobbyRoomErrUpload": "Upload failed: {error}",
+  "lobbyRoomErrUpdateHandOp": "Couldn't update your raised hand",
+  "lobbyRoomErrUpload": "Your upload didn't go through. Try again in a moment. ({error})",
   "@lobbyRoomErrUpload": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -2491,7 +2533,7 @@
   "membersErrSendInvite": "Couldn't send invite",
   "membersInviteAdmin": "Invite as admin",
   "membersInviteMod": "Invite as moderator",
-  "membersLoadError": "Couldn't load members: {error}",
+  "membersLoadError": "We couldn't load the members right now. Try again in a moment. ({error})",
   "@membersLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -2555,7 +2597,7 @@
   "newTicketErrSubject": "Subject is required.",
   "newTicketErrSubmit": "Couldn't submit the ticket",
   "newTicketFilePickerUnavailable": "File picker not available yet. Please restart the app to finish setting it up.",
-  "newTicketGroupsError": "Couldn't load your groups: {error}",
+  "newTicketGroupsError": "We couldn't load your groups right now. Try again in a moment. ({error})",
   "@newTicketGroupsError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -2762,6 +2804,8 @@
   "notifKindGroupMessageReactionTitle": "Reactions on your group messages",
   "notifKindGroupMessageSubtitle": "Someone posted in a group chat you're in.",
   "notifKindGroupMessageTitle": "New group chat messages",
+  "notifKindGroupPostCommentReactionSubtitle": "Someone reacted to a comment you wrote on a group post.",
+  "notifKindGroupPostCommentReactionTitle": "Reactions on your group post comments",
   "notifKindGroupPostCommentSubtitle": "Someone commented on a post you wrote in a group.",
   "notifKindGroupPostCommentTitle": "Comments on your group posts",
   "notifKindGroupPostMentionSubtitle": "Someone @-mentioned you in a group post or comment.",
@@ -2774,6 +2818,8 @@
   "notifKindLobbyStartedTitle": "New live lobbies",
   "notifKindMentionSubtitle": "Someone @-mentioned you on the feed.",
   "notifKindMentionTitle": "Mentions in posts and comments",
+  "notifKindPostCommentReactionSubtitle": "Someone reacted to a comment you wrote on a feed post.",
+  "notifKindPostCommentReactionTitle": "Reactions on your post comments",
   "notifKindPostCommentSubtitle": "Someone commented on a post you wrote.",
   "notifKindPostCommentTitle": "Comments on your posts",
   "notifKindPostLikeSubtitle": "Someone liked a post you wrote.",
@@ -2796,9 +2842,11 @@
   "notifKindTrustedCircleAcceptedTitle": "Trusted Circle accepts",
   "notifKindTrustedCircleRequestSubtitle": "A friend wants to add you to their Trusted Circle.",
   "notifKindTrustedCircleRequestTitle": "Trusted Circle invites",
+  "notifKindWeeklyPromptReplyReactionSubtitle": "Someone reacted to a reply you wrote in a Weekly Prompt thread.",
+  "notifKindWeeklyPromptReplyReactionTitle": "Reactions on your Weekly Prompt replies",
   "notifKindWeeklyPromptReplyReceivedSubtitle": "Someone replied to a response you posted under the Weekly Prompt.",
   "notifKindWeeklyPromptReplyReceivedTitle": "Replies to your Weekly Prompt response",
-  "notifLoadError": "Could not load: {error}",
+  "notifLoadError": "We couldn't load your notifications right now. Try again in a moment. ({error})",
   "@notifLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -2846,7 +2894,7 @@
   "notifSettingsErrSave": "Couldn't save preference",
   "notifSettingsInApp": "In-app",
   "notifSettingsInfo": "Push silences the phone notification. In-app keeps the item in your bell + unread badge so you can find it later. Per-group overrides live in each group's settings.",
-  "notifSettingsLoadError": "Could not load: {error}",
+  "notifSettingsLoadError": "We couldn't load your notification settings right now. Try again in a moment. ({error})",
   "@notifSettingsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -2914,7 +2962,7 @@
   "onboardingPronounsOtherHint": "e.g. xe/xem, fae/faer, name only",
   "onboardingPronounsSub": "We'll show these on your profile and in replies.",
   "onboardingPronounsTitle": "Your pronouns",
-  "onboardingSaveError": "Could not save: {error}",
+  "onboardingSaveError": "We couldn't save that just now. Try again in a moment. ({error})",
   "@onboardingSaveError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -2924,6 +2972,7 @@
 
   "onbOptActivism": "activism",
   "onbOptAlly": "ally",
+  "onbOptAnime": "anime",
   "onbOptAnyPronouns": "any pronouns",
   "onbOptAromantic": "aromantic",
   "onbOptArt": "art",
@@ -2932,6 +2981,9 @@
   "onbOptBisexual": "bisexual",
   "onbOptBoardGames": "board games",
   "onbOptBooks": "books",
+  "onbOptClimbing": "climbing",
+  "onbOptCoffee": "coffee",
+  "onbOptComedy": "comedy",
   "onbOptCooking": "cooking",
   "onbOptCrafts": "crafts",
   "onbOptDance": "dance",
@@ -2948,27 +3000,38 @@
   "onbOptHeHim": "he/him",
   "onbOptHeThey": "he/they",
   "onbOptHiking": "hiking",
+  "onbOptHistory": "history",
   "onbOptIntersex": "intersex",
   "onbOptKnitting": "knitting",
+  "onbOptKpop": "k-pop",
   "onbOptLesbian": "lesbian",
+  "onbOptMeditation": "meditation",
   "onbOptMusic": "music",
+  "onbOptNature": "nature",
   "onbOptNonbinary": "nonbinary",
   "onbOptNoPronouns": "no pronouns",
   "onbOptOther": "Other",
   "onbOptPansexual": "pansexual",
+  "onbOptPets": "pets",
   "onbOptPhotography": "photography",
+  "onbOptPodcasts": "podcasts",
   "onbOptPreferNotToSay": "prefer not to say",
   "onbOptQueer": "queer",
   "onbOptQuestioning": "questioning",
+  "onbOptScience": "science",
   "onbOptSheHer": "she/her",
   "onbOptSheThey": "she/they",
+  "onbOptSkating": "skating",
   "onbOptSports": "sports",
+  "onbOptStreaming": "streaming",
+  "onbOptTabletop": "tabletop",
   "onbOptTech": "tech",
   "onbOptTheatre": "theatre",
   "onbOptTheyThem": "they/them",
   "onbOptTrans": "trans",
   "onbOptTravel": "travel",
   "onbOptTwoSpirit": "two-spirit",
+  "onbOptVolunteering": "volunteering",
   "onbOptWriting": "writing",
   "onbOptYoga": "yoga",
 
@@ -3020,26 +3083,37 @@
   "postCardEditHint": "What do you want to say?",
   "postCardEditPost": "Edit post",
   "postCardErrDelete": "Couldn't delete post",
-  "postCardErrLike": "Couldn't update like: {error}",
+  "postCardErrLike": "We couldn't update your like just now. Try again in a moment. ({error})",
   "@postCardErrLike": {
     "placeholders": { "error": { "type": "String" } }
   },
+  "postCardErrLikeOp": "Couldn't update your like",
   "postCardErrSave": "Couldn't save post",
+  "postCardErrShareOp": "Couldn't share post",
+  "postCardMenuCopy": "Copy text",
+  "postCardMenuForward": "Forward",
+  "postCardMenuHeart": "Heart",
+  "postCardMenuReply": "Reply",
+  "postCardMenuReport": "Report",
+  "postCardMenuShare": "Share",
+  "postCardMenuStaffModerate": "Moderate / delete (staff)",
+  "postCardMenuUnheart": "Remove heart",
   "postCardOpenProfile": "Open {name}'s profile",
   "@postCardOpenProfile": {
     "placeholders": { "name": { "type": "String" } }
   },
   "postCardOptions": "Post options",
   "postCardPermBody": "Admin delete is gated on the moderate_content staff permission. Ask a super-admin to grant it to your role.",
-  "postCardPermRubric": "MISSING PERMISSION",
+  "postCardPermRubric": "NOT ALLOWED",
   "postCardPermTitle": "Need the moderate_content perm",
   "postCardRemovedBanner": "Removed by Luney moderation",
   "postCardRemovedBody": "This post is already taken down. Restore it from the web admin tool, not the mobile app.",
   "postCardRemovedRubric": "ALREADY REMOVED",
   "postCardRemovedTitle": "Already removed by Luney moderation",
+  "postCardReportLabel": "this post",
   "postCardSpoilerOff": "Photo loads in full.",
   "postCardSpoilerOn": "Photo will load behind a blur until viewers tap.",
-  "postDetailLoadError": "Could not load post: {error}",
+  "postDetailLoadError": "We couldn't load this post right now. Try again in a moment. ({error})",
   "@postDetailLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -3177,7 +3251,7 @@
   "profileScreenFriendsNone": "- friends",
   "profileScreenIdentity": "IDENTITY",
   "profileScreenInterests": "INTERESTS",
-  "profileScreenLoadError": "Could not load: {error}",
+  "profileScreenLoadError": "We couldn't load this profile right now. Try again in a moment. ({error})",
   "@profileScreenLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -3242,11 +3316,11 @@
   "profileSheetErrBanMember": "Couldn't ban member",
   "profileSheetErrClearAvatar": "Couldn't clear avatar",
   "profileSheetErrClearBanner": "Couldn't clear banner",
-  "profileSheetErrLoadGroupProfile": "Couldn't load this group's profile.\n{error}",
+  "profileSheetErrLoadGroupProfile": "We couldn't load this group's profile right now. Try again in a moment.\n({error})",
   "@profileSheetErrLoadGroupProfile": {
     "placeholders": { "error": { "type": "String" } }
   },
-  "profileSheetErrLoadRoles": "Couldn't load roles: {error}",
+  "profileSheetErrLoadRoles": "We couldn't load the roles right now. Try again in a moment. ({error})",
   "@profileSheetErrLoadRoles": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -3579,7 +3653,7 @@
   "reportDetailHardConfirmAction": "Permanently remove",
   "reportDetailHardConfirmBody": "Hard delete bypasses the 7-day undo window. The row is gone immediately and cannot be restored. Reserved for clearly illegal content.",
   "reportDetailHardConfirmTitle": "Permanently remove?",
-  "reportDetailLoadError": "Could not load: {error}",
+  "reportDetailLoadError": "We couldn't load this report right now. Try again in a moment. ({error})",
   "@reportDetailLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -3668,7 +3742,7 @@
   "reportsInboxKindUser": "User",
   "reportsInboxKindWeeklyPromptReply": "Weekly prompt reply",
   "reportsInboxKindWeeklyPromptResponse": "Weekly prompt response",
-  "reportsInboxLoadError": "Could not load: {error}",
+  "reportsInboxLoadError": "We couldn't load your reports right now. Try again in a moment. ({error})",
   "@reportsInboxLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -3731,7 +3805,7 @@
   "@reviewPoliciesIntro": {
     "placeholders": { "count": { "type": "int" } }
   },
-  "reviewPoliciesLoadError": "Could not load: {error}",
+  "reviewPoliciesLoadError": "We couldn't load the policies right now. Try again in a moment. ({error})",
   "@reviewPoliciesLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -3886,7 +3960,7 @@
   "screenshotNotifierRubric": "SCREENSHOT TAKEN",
 
   "searchClear": "Clear search",
-  "searchFailed": "Search failed: {error}",
+  "searchFailed": "Your search didn't go through. Try again in a moment. ({error})",
   "@searchFailed": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -3906,7 +3980,7 @@
   "securityEmailSentMsg": "Tap the link in the email to confirm the change. Your current email stays active until you click the link.",
   "securityEmailSentRubric": "CHECK YOUR INBOX",
   "securityEmailSentTitle": "Verification email sent",
-  "securityLoadError": "Could not load: {error}",
+  "securityLoadError": "We couldn't load your security settings right now. Try again in a moment. ({error})",
   "@securityLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -4036,7 +4110,7 @@
   "shareSheetNoChats": "You don't have any chats yet. Start one from a friend's profile.",
   "shareSheetNoGroups": "You're not in any groups yet.",
   "shareSheetNoHandlerBody": "Your device doesn't have an app installed that can handle this link. Try a different share destination.",
-  "shareSheetNoHandlerRubric": "NO HANDLER",
+  "shareSheetNoHandlerRubric": "CAN'T OPEN THIS",
   "shareSheetNoHandlerTitle": "Couldn't open the share link",
   "shareSheetPostedBody": "Members can see it on the Posts tab now.",
   "shareSheetPostedRubric": "POSTED",
@@ -4280,7 +4354,7 @@
     "placeholders": { "filter": { "type": "String" } }
   },
   "staffInboxEmptyTitle": "Inbox is empty.",
-  "staffInboxLoadError": "Could not load: {error}",
+  "staffInboxLoadError": "We couldn't load the inbox right now. Try again in a moment. ({error})",
   "@staffInboxLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -4324,10 +4398,11 @@
   "ticketDetailCloseTitle": "Close this ticket?",
   "ticketDetailCopyLink": "Copy link",
   "ticketDetailErrClose": "Couldn't close ticket",
-  "ticketDetailErrReact": "Couldn't react: {error}",
+  "ticketDetailErrReact": "We couldn't add your reaction just now. Try again in a moment. ({error})",
   "@ticketDetailErrReact": {
     "placeholders": { "error": { "type": "String" } }
   },
+  "ticketDetailErrReactOp": "Couldn't add your reaction",
   "ticketDetailErrSendReply": "Couldn't send reply",
   "ticketDetailFromModeration": "From Luney moderation",
   "ticketDetailGroupFallback": "group",
@@ -4356,7 +4431,7 @@
   "@ticketDetailLinkNumbered": {
     "placeholders": { "number": { "type": "String" } }
   },
-  "ticketDetailLoadError": "Could not load: {error}",
+  "ticketDetailLoadError": "We couldn't load this ticket right now. Try again in a moment. ({error})",
   "@ticketDetailLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -4404,7 +4479,7 @@
     "placeholders": { "filter": { "type": "String" } }
   },
   "ticketsEmptyTitle": "No tickets yet.",
-  "ticketsLoadError": "Could not load: {error}",
+  "ticketsLoadError": "We couldn't load your tickets right now. Try again in a moment. ({error})",
   "@ticketsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -4599,11 +4674,12 @@
   "weeklyPromptThreadDeleteErrorOp": "Couldn't delete reply",
   "weeklyPromptThreadDeleteMyReplyA11y": "Delete my reply",
   "weeklyPromptThreadDeleteTitle": "Delete reply?",
+  "weeklyPromptThreadEditErrorOp": "Couldn't save your edit",
   "weeklyPromptThreadGoBack": "Go back",
   "weeklyPromptThreadNoReplies": "No replies yet, be the first.",
   "weeklyPromptThreadReactionErrorOp": "Couldn't update your reaction",
   "weeklyPromptThreadReplies": "REPLIES",
-  "weeklyPromptThreadRepliesError": "Couldn't load replies: {error}",
+  "weeklyPromptThreadRepliesError": "We couldn't load the replies right now. Try again in a moment. ({error})",
   "@weeklyPromptThreadRepliesError": {
     "placeholders": { "error": { "type": "String" } }
   },
@@ -4614,6 +4690,7 @@
     "placeholders": { "name": { "type": "String" } }
   },
   "weeklyPromptThreadReportLabel": "this reply",
+  "weeklyPromptThreadReportResponseLabel": "this response",
   "weeklyPromptThreadSend": "Send",
   "weeklyPromptThreadSendA11y": "Send reply",
   "weeklyPromptThreadShowMore": "{count, plural, =1{Show 1 more reply} other{Show {count} more replies}}",
