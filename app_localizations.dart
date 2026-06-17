@@ -106,11 +106,53 @@ abstract class AppLocalizations {
   /// **'Commit {hash}'**
   String aboutCommit(String hash);
 
+  /// No description provided for @aboutDebugForceResyncDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Session rotated and caches cleared. Lists will refetch as you open them.'**
+  String get aboutDebugForceResyncDone;
+
+  /// No description provided for @aboutDebugForceResyncLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Force resync (rotate session)'**
+  String get aboutDebugForceResyncLabel;
+
+  /// No description provided for @aboutDebugResetFirstRunDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Cleared. Kill the app from the OS app-switcher and relaunch, the Welcome sheet and What\'s New sheet will fire again on next cold start.'**
+  String get aboutDebugResetFirstRunDone;
+
+  /// No description provided for @aboutDebugResetFirstRunLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset first-run sheets'**
+  String get aboutDebugResetFirstRunLabel;
+
+  /// No description provided for @aboutPrivacy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get aboutPrivacy;
+
+  /// No description provided for @aboutRateApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate Luney'**
+  String get aboutRateApp;
+
   /// No description provided for @aboutSectionRead.
   ///
   /// In en, this message translates to:
   /// **'READ'**
   String get aboutSectionRead;
+
+  /// No description provided for @aboutTerms.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms of Service'**
+  String get aboutTerms;
 
   /// No description provided for @aboutTitle.
   ///
@@ -1240,6 +1282,12 @@ abstract class AppLocalizations {
   /// **'You haven\'t blocked anyone'**
   String get blockedUsersEmpty;
 
+  /// No description provided for @blockedUsersEmptyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'If you ever block someone, they show up here so you can unblock them later.'**
+  String get blockedUsersEmptyBody;
+
   /// No description provided for @blockedUsersLoadError.
   ///
   /// In en, this message translates to:
@@ -1450,6 +1498,48 @@ abstract class AppLocalizations {
   /// **'Replying to {name}'**
   String chatBubbleReplyingTo(String name);
 
+  /// No description provided for @chatComposerAttachPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Attach photo'**
+  String get chatComposerAttachPhoto;
+
+  /// No description provided for @chatComposerCancelEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel edit'**
+  String get chatComposerCancelEdit;
+
+  /// No description provided for @chatComposerCancelReply.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel reply'**
+  String get chatComposerCancelReply;
+
+  /// No description provided for @chatComposerRemovePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove photo'**
+  String get chatComposerRemovePhoto;
+
+  /// No description provided for @chatComposerSaveEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Save edit'**
+  String get chatComposerSaveEdit;
+
+  /// No description provided for @chatComposerSend.
+  ///
+  /// In en, this message translates to:
+  /// **'Send message'**
+  String get chatComposerSend;
+
+  /// No description provided for @chatRealtimeConnecting.
+  ///
+  /// In en, this message translates to:
+  /// **'Connecting…'**
+  String get chatRealtimeConnecting;
+
   /// No description provided for @commentsCancelEdit.
   ///
   /// In en, this message translates to:
@@ -1504,6 +1594,12 @@ abstract class AppLocalizations {
   /// **'Replies under it will be removed too.'**
   String get commentsDeleteBody;
 
+  /// No description provided for @commentsDeletedSnack.
+  ///
+  /// In en, this message translates to:
+  /// **'Comment deleted'**
+  String get commentsDeletedSnack;
+
   /// No description provided for @commentsDeleteTitle.
   ///
   /// In en, this message translates to:
@@ -1545,6 +1641,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Be the first to say something kind.'**
   String get commentsEmptyBody;
+
+  /// No description provided for @commentsEmptyCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Add the first comment'**
+  String get commentsEmptyCta;
 
   /// No description provided for @commentsEmptyTitle.
   ///
@@ -3112,6 +3214,12 @@ abstract class AppLocalizations {
   /// **'event'**
   String get dmBubbleVerbEvent;
 
+  /// No description provided for @dmBubbleVerbPin.
+  ///
+  /// In en, this message translates to:
+  /// **'pinned a message'**
+  String get dmBubbleVerbPin;
+
   /// No description provided for @dmBubbleVerbScreenRecording.
   ///
   /// In en, this message translates to:
@@ -3123,6 +3231,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'took a screenshot'**
   String get dmBubbleVerbScreenshot;
+
+  /// No description provided for @dmBubbleVerbUnpin.
+  ///
+  /// In en, this message translates to:
+  /// **'unpinned a message'**
+  String get dmBubbleVerbUnpin;
 
   /// No description provided for @dmBubbleYou.
   ///
@@ -3139,19 +3253,19 @@ abstract class AppLocalizations {
   /// No description provided for @dmChatBlockedBody.
   ///
   /// In en, this message translates to:
-  /// **'One of you blocked the other. You can still scroll the history above, but new messages won\'t send.'**
+  /// **'Messages aren\'t going through right now. They may have changed their DM settings, or one of you may have blocked the other. You can still scroll the history above. If you blocked them by accident, you can unblock them from their profile sheet.'**
   String get dmChatBlockedBody;
 
   /// No description provided for @dmChatBlockedRubric.
   ///
   /// In en, this message translates to:
-  /// **'MESSAGING BLOCKED'**
+  /// **'MESSAGES PAUSED'**
   String get dmChatBlockedRubric;
 
   /// No description provided for @dmChatBlockedTitle.
   ///
   /// In en, this message translates to:
-  /// **'You can no longer message this user'**
+  /// **'New messages can\'t be sent right now'**
   String get dmChatBlockedTitle;
 
   /// No description provided for @dmChatCloseSearch.
@@ -3172,6 +3286,12 @@ abstract class AppLocalizations {
   /// **'This removes it for both of you. Can\'t be undone.'**
   String get dmChatDeleteBody;
 
+  /// No description provided for @dmChatDeletedSnack.
+  ///
+  /// In en, this message translates to:
+  /// **'Message deleted'**
+  String get dmChatDeletedSnack;
+
   /// No description provided for @dmChatDeleteTitle.
   ///
   /// In en, this message translates to:
@@ -3189,6 +3309,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Editing message'**
   String get dmChatEditingBanner;
+
+  /// No description provided for @dmChatEditLastMessageTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit last message'**
+  String get dmChatEditLastMessageTooltip;
 
   /// No description provided for @dmChatEmoji.
   ///
@@ -3232,6 +3358,18 @@ abstract class AppLocalizations {
   /// **'Couldn\'t send the GIF'**
   String get dmChatErrSendGif;
 
+  /// No description provided for @dmChatFailedA11y.
+  ///
+  /// In en, this message translates to:
+  /// **'Message failed to send. Tap to retry.'**
+  String get dmChatFailedA11y;
+
+  /// No description provided for @dmChatFailedRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to retry'**
+  String get dmChatFailedRetry;
+
   /// No description provided for @dmChatGone.
   ///
   /// In en, this message translates to:
@@ -3268,6 +3406,12 @@ abstract class AppLocalizations {
   /// **'Favourite GIF'**
   String get dmChatMenuFavGif;
 
+  /// No description provided for @dmChatMenuPinMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Pin to chat'**
+  String get dmChatMenuPinMessage;
+
   /// No description provided for @dmChatMenuReply.
   ///
   /// In en, this message translates to:
@@ -3280,11 +3424,47 @@ abstract class AppLocalizations {
   /// **'Remove from favourites'**
   String get dmChatMenuUnfavGif;
 
+  /// No description provided for @dmChatMenuUnpinMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Unpin from chat'**
+  String get dmChatMenuUnpinMessage;
+
   /// No description provided for @dmChatNoSearchMatch.
   ///
   /// In en, this message translates to:
   /// **'No messages match \"{query}\".'**
   String dmChatNoSearchMatch(String query);
+
+  /// No description provided for @dmChatOpenPinnedMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'View pinned messages'**
+  String get dmChatOpenPinnedMessages;
+
+  /// No description provided for @dmChatPreviewPinMine.
+  ///
+  /// In en, this message translates to:
+  /// **'📌 You pinned a message'**
+  String get dmChatPreviewPinMine;
+
+  /// No description provided for @dmChatPreviewPinOther.
+  ///
+  /// In en, this message translates to:
+  /// **'📌 {name} pinned a message'**
+  String dmChatPreviewPinOther(String name);
+
+  /// No description provided for @dmChatPreviewUnpinMine.
+  ///
+  /// In en, this message translates to:
+  /// **'You unpinned a message'**
+  String get dmChatPreviewUnpinMine;
+
+  /// No description provided for @dmChatPreviewUnpinOther.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} unpinned a message'**
+  String dmChatPreviewUnpinOther(String name);
 
   /// No description provided for @dmChatReplying.
   ///
@@ -3346,6 +3526,12 @@ abstract class AppLocalizations {
   /// **'Message'**
   String get dmChatTitleFallback;
 
+  /// No description provided for @dmChatUnreadDivider.
+  ///
+  /// In en, this message translates to:
+  /// **'New messages'**
+  String get dmChatUnreadDivider;
+
   /// No description provided for @dmChatWarnUser.
   ///
   /// In en, this message translates to:
@@ -3400,6 +3586,24 @@ abstract class AppLocalizations {
   /// **'Delete this conversation?'**
   String get dmsDeleteTitle;
 
+  /// No description provided for @dmSelfOptOutBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your \"Who Can DM\" setting is set to Nobody, so you can\'t start or send messages. Change it in Settings → Privacy to start messaging again.'**
+  String get dmSelfOptOutBody;
+
+  /// No description provided for @dmSelfOptOutRubric.
+  ///
+  /// In en, this message translates to:
+  /// **'DIRECT MESSAGES OFF'**
+  String get dmSelfOptOutRubric;
+
+  /// No description provided for @dmSelfOptOutTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve turned off direct messages'**
+  String get dmSelfOptOutTitle;
+
   /// No description provided for @dmsEmptyTitle.
   ///
   /// In en, this message translates to:
@@ -3417,6 +3621,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'We couldn\'t load your conversations right now. Try again in a moment. ({error})'**
   String dmsLoadError(String error);
+
+  /// No description provided for @dmsMarkAsUnread.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as unread'**
+  String get dmsMarkAsUnread;
 
   /// No description provided for @dmsNewMessageButton.
   ///
@@ -3441,6 +3651,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No conversations match \"{query}\".'**
   String dmsNoMatch(String query);
+
+  /// No description provided for @dmsPinConversation.
+  ///
+  /// In en, this message translates to:
+  /// **'Pin to top'**
+  String get dmsPinConversation;
+
+  /// No description provided for @dmsPreviewDraftPrefix.
+  ///
+  /// In en, this message translates to:
+  /// **'Draft: '**
+  String get dmsPreviewDraftPrefix;
 
   /// No description provided for @dmsPreviewNoMessages.
   ///
@@ -3495,6 +3717,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Messages'**
   String get dmsTitle;
+
+  /// No description provided for @dmsUnpinConversation.
+  ///
+  /// In en, this message translates to:
+  /// **'Unpin'**
+  String get dmsUnpinConversation;
 
   /// No description provided for @draftsListConfirmBody.
   ///
@@ -4690,6 +4918,42 @@ abstract class AppLocalizations {
   /// **'Feedback isn\'t available right now. Try again later.'**
   String get feedbackUnavailable;
 
+  /// No description provided for @feedPendingDismissA11y.
+  ///
+  /// In en, this message translates to:
+  /// **'Dismiss this failed post'**
+  String get feedPendingDismissA11y;
+
+  /// No description provided for @feedPendingFailedRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Send failed · Tap to retry'**
+  String get feedPendingFailedRetry;
+
+  /// No description provided for @feedPendingFailedShort.
+  ///
+  /// In en, this message translates to:
+  /// **'send failed'**
+  String get feedPendingFailedShort;
+
+  /// No description provided for @feedPendingNow.
+  ///
+  /// In en, this message translates to:
+  /// **'now'**
+  String get feedPendingNow;
+
+  /// No description provided for @feedPendingPosting.
+  ///
+  /// In en, this message translates to:
+  /// **'Posting…'**
+  String get feedPendingPosting;
+
+  /// No description provided for @feedPendingTapToRetryA11y.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to retry sending this post'**
+  String get feedPendingTapToRetryA11y;
+
   /// No description provided for @forgotPasswordBackTooltip.
   ///
   /// In en, this message translates to:
@@ -4822,17 +5086,35 @@ abstract class AppLocalizations {
   /// **'Decline'**
   String get friendRequestsActionDecline;
 
+  /// No description provided for @friendRequestsEmptyFindPeopleCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Find people'**
+  String get friendRequestsEmptyFindPeopleCta;
+
   /// No description provided for @friendRequestsEmptyReceived.
   ///
   /// In en, this message translates to:
   /// **'No requests waiting on you.'**
   String get friendRequestsEmptyReceived;
 
+  /// No description provided for @friendRequestsEmptyReceivedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'When someone sends you a friend request, it shows up here.'**
+  String get friendRequestsEmptyReceivedBody;
+
   /// No description provided for @friendRequestsEmptySent.
   ///
   /// In en, this message translates to:
   /// **'You haven\'t sent any pending requests.'**
   String get friendRequestsEmptySent;
+
+  /// No description provided for @friendRequestsEmptySentBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Send one from someone\'s profile and it\'ll wait here until they accept or decline.'**
+  String get friendRequestsEmptySentBody;
 
   /// No description provided for @friendRequestsErrAccept.
   ///
@@ -4917,6 +5199,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Tap a profile and hit Add Friend to start a connection.'**
   String get friendsListEmptyMineBody;
+
+  /// No description provided for @friendsListEmptyMineCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Check friend requests'**
+  String get friendsListEmptyMineCta;
 
   /// No description provided for @friendsListEmptyMineTitle.
   ///
@@ -5020,6 +5308,12 @@ abstract class AppLocalizations {
   /// **'You\'re deleting another member\'s message as a group admin/mod. This removes it for everyone in the group.'**
   String get groupChatDeleteBodyAdmin;
 
+  /// No description provided for @groupChatDeletedSnack.
+  ///
+  /// In en, this message translates to:
+  /// **'Message deleted'**
+  String get groupChatDeletedSnack;
+
   /// No description provided for @groupChatDeleteTitle.
   ///
   /// In en, this message translates to:
@@ -5031,6 +5325,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Delete this message?'**
   String get groupChatDeleteTitleAdmin;
+
+  /// No description provided for @groupChatEditLastMessageTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit last message'**
+  String get groupChatEditLastMessageTooltip;
 
   /// No description provided for @groupChatEmpty.
   ///
@@ -5116,6 +5416,12 @@ abstract class AppLocalizations {
   /// **'Favourite GIF'**
   String get groupChatMenuFavGif;
 
+  /// No description provided for @groupChatMenuPinMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Pin to chat'**
+  String get groupChatMenuPinMessage;
+
   /// No description provided for @groupChatMenuReply.
   ///
   /// In en, this message translates to:
@@ -5140,6 +5446,12 @@ abstract class AppLocalizations {
   /// **'Remove from favourites'**
   String get groupChatMenuUnfavGif;
 
+  /// No description provided for @groupChatMenuUnpinMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Unpin from chat'**
+  String get groupChatMenuUnpinMessage;
+
   /// No description provided for @groupChatMomentShort.
   ///
   /// In en, this message translates to:
@@ -5157,6 +5469,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Mute lifts in {remaining}.'**
   String groupChatMuteLiftsIn(String remaining);
+
+  /// No description provided for @groupChatOpenPinnedMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'View pinned messages'**
+  String get groupChatOpenPinnedMessages;
+
+  /// No description provided for @groupChatPinAdminOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'Only admins can pin messages'**
+  String get groupChatPinAdminOnly;
 
   /// No description provided for @groupChatRecordingWarnFailed.
   ///
@@ -5236,6 +5560,12 @@ abstract class AppLocalizations {
   /// **'joined the group'**
   String get groupChatVerbJoined;
 
+  /// No description provided for @groupChatVerbPin.
+  ///
+  /// In en, this message translates to:
+  /// **'pinned a message'**
+  String get groupChatVerbPin;
+
   /// No description provided for @groupChatVerbScreenRecording.
   ///
   /// In en, this message translates to:
@@ -5247,6 +5577,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'took a screenshot'**
   String get groupChatVerbScreenshot;
+
+  /// No description provided for @groupChatVerbUnpin.
+  ///
+  /// In en, this message translates to:
+  /// **'unpinned a message'**
+  String get groupChatVerbUnpin;
 
   /// No description provided for @groupChatYou.
   ///
@@ -6844,6 +7180,18 @@ abstract class AppLocalizations {
   /// **'Welcome guests: what to know before joining (up to 4000 chars)'**
   String get groupSettingsGuestHint;
 
+  /// No description provided for @groupSettingsHideFromMutualsToggle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide from Mutual Groups'**
+  String get groupSettingsHideFromMutualsToggle;
+
+  /// No description provided for @groupSettingsHideFromMutualsToggleSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t show this group in anyone\'s \"mutual groups\" section on profiles. Useful for sensitive communities.'**
+  String get groupSettingsHideFromMutualsToggleSub;
+
   /// No description provided for @groupSettingsHideWhoJoined.
   ///
   /// In en, this message translates to:
@@ -7846,6 +8194,18 @@ abstract class AppLocalizations {
   /// **'You now own {group}'**
   String groupTransferInviteTransferredTitle(String group);
 
+  /// No description provided for @hashtagGroupsError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load groups.'**
+  String get hashtagGroupsError;
+
+  /// No description provided for @hashtagNoGroups.
+  ///
+  /// In en, this message translates to:
+  /// **'No groups with #{tag} yet.'**
+  String hashtagNoGroups(String tag);
+
   /// No description provided for @hashtagNoPosts.
   ///
   /// In en, this message translates to:
@@ -7869,6 +8229,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t load reels.'**
   String get hashtagReelsError;
+
+  /// No description provided for @hashtagTabGroups.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups'**
+  String get hashtagTabGroups;
 
   /// No description provided for @hashtagTabPosts.
   ///
@@ -8662,17 +9028,53 @@ abstract class AppLocalizations {
   /// **'Crop photo'**
   String get imageCropTitle;
 
+  /// No description provided for @inAppActorLuneyRewind.
+  ///
+  /// In en, this message translates to:
+  /// **'Luney Rewind'**
+  String get inAppActorLuneyRewind;
+
   /// No description provided for @inAppActorLuneyStaff.
   ///
   /// In en, this message translates to:
   /// **'Luney Staff'**
   String get inAppActorLuneyStaff;
 
+  /// No description provided for @inAppActorLuneyTeam.
+  ///
+  /// In en, this message translates to:
+  /// **'Luney team'**
+  String get inAppActorLuneyTeam;
+
+  /// No description provided for @inAppActorModerationTeam.
+  ///
+  /// In en, this message translates to:
+  /// **'Luney moderation team'**
+  String get inAppActorModerationTeam;
+
+  /// No description provided for @inAppActorNewBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'New badge'**
+  String get inAppActorNewBadge;
+
   /// No description provided for @inAppActorSomeone.
   ///
   /// In en, this message translates to:
   /// **'Someone'**
   String get inAppActorSomeone;
+
+  /// No description provided for @inAppActorYourGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'Your group'**
+  String get inAppActorYourGroup;
+
+  /// No description provided for @inAppActorYourReel.
+  ///
+  /// In en, this message translates to:
+  /// **'Your reel'**
+  String get inAppActorYourReel;
 
   /// No description provided for @inAppAnotherMember.
   ///
@@ -8974,6 +9376,18 @@ abstract class AppLocalizations {
   /// **'A warning was issued on your account.'**
   String get inAppModWarn;
 
+  /// No description provided for @inlineReelFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Reel failed'**
+  String get inlineReelFailed;
+
+  /// No description provided for @inlineReelProcessing.
+  ///
+  /// In en, this message translates to:
+  /// **'Processing…'**
+  String get inlineReelProcessing;
+
   /// No description provided for @inviteAlreadyMember.
   ///
   /// In en, this message translates to:
@@ -9075,6 +9489,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'System default'**
   String get languageSystemDefault;
+
+  /// No description provided for @lastSeenActiveNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Active now'**
+  String get lastSeenActiveNow;
+
+  /// No description provided for @lastSeenDaysAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Last seen {n}d ago'**
+  String lastSeenDaysAgo(int n);
+
+  /// No description provided for @lastSeenHoursAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Last seen {n}h ago'**
+  String lastSeenHoursAgo(int n);
+
+  /// No description provided for @lastSeenLongAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Last seen a while ago'**
+  String get lastSeenLongAgo;
+
+  /// No description provided for @lastSeenMinutesAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Last seen {n} min ago'**
+  String lastSeenMinutesAgo(int n);
+
+  /// No description provided for @lastSeenWeeksAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Last seen {n}w ago'**
+  String lastSeenWeeksAgo(int n);
 
   /// No description provided for @lobbiesListDisabledBanner.
   ///
@@ -10000,6 +10450,78 @@ abstract class AppLocalizations {
   /// **'MENTION'**
   String get mentionTextRubric;
 
+  /// No description provided for @milestoneAnniversaryAccountBirthdayTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 year on Luney today} other{{count} years on Luney today}}'**
+  String milestoneAnniversaryAccountBirthdayTitle(int count);
+
+  /// No description provided for @milestoneAnniversaryCardSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Card sent 💌'**
+  String get milestoneAnniversaryCardSent;
+
+  /// No description provided for @milestoneAnniversaryFirstDmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 year of chatting today} other{{count} years of chatting today}}'**
+  String milestoneAnniversaryFirstDmTitle(int count);
+
+  /// No description provided for @milestoneAnniversaryGroupJoinTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 year in this group today} other{{count} years in this group today}}'**
+  String milestoneAnniversaryGroupJoinTitle(int count);
+
+  /// No description provided for @milestoneAnniversaryTapToSend.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to send a card'**
+  String get milestoneAnniversaryTapToSend;
+
+  /// No description provided for @muteDuration1Hour.
+  ///
+  /// In en, this message translates to:
+  /// **'Mute for 1 hour'**
+  String get muteDuration1Hour;
+
+  /// No description provided for @muteDuration8Hours.
+  ///
+  /// In en, this message translates to:
+  /// **'Mute for 8 hours'**
+  String get muteDuration8Hours;
+
+  /// No description provided for @muteDurationForever.
+  ///
+  /// In en, this message translates to:
+  /// **'Mute until I turn it back on'**
+  String get muteDurationForever;
+
+  /// No description provided for @muteDurationSheetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Mute notifications'**
+  String get muteDurationSheetTitle;
+
+  /// No description provided for @muteFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t update mute'**
+  String get muteFailed;
+
+  /// No description provided for @muteThreadMute.
+  ///
+  /// In en, this message translates to:
+  /// **'Mute notifications'**
+  String get muteThreadMute;
+
+  /// No description provided for @muteThreadUnmute.
+  ///
+  /// In en, this message translates to:
+  /// **'Unmute notifications'**
+  String get muteThreadUnmute;
+
   /// No description provided for @myAchievementsEmptyBody.
   ///
   /// In en, this message translates to:
@@ -10081,26 +10603,38 @@ abstract class AppLocalizations {
   /// No description provided for @newDmBlockedBody.
   ///
   /// In en, this message translates to:
-  /// **'One of you has blocked the other, so a new DM can\'t start. If you blocked them by accident, unblock them from their profile sheet.'**
+  /// **'You can\'t start a new DM with this person right now. They may limit who can DM them, or one of you may have blocked the other. If you blocked them by accident, you can unblock them from their profile sheet.'**
   String get newDmBlockedBody;
 
   /// No description provided for @newDmBlockedRubric.
   ///
   /// In en, this message translates to:
-  /// **'CONVERSATION BLOCKED'**
+  /// **'DMS UNAVAILABLE'**
   String get newDmBlockedRubric;
 
   /// No description provided for @newDmBlockedTitle.
   ///
   /// In en, this message translates to:
-  /// **'You can\'t start this conversation'**
+  /// **'You can\'t start a DM with this person'**
   String get newDmBlockedTitle;
+
+  /// No description provided for @newDmEmptyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a friend from their profile to start a chat, or find someone new.'**
+  String get newDmEmptyBody;
 
   /// No description provided for @newDmEmptyPrompt.
   ///
   /// In en, this message translates to:
-  /// **'Find someone to message. Type a handle.'**
+  /// **'You haven\'t added any friends yet. Send a friend request from someone\'s profile to start a chat.'**
   String get newDmEmptyPrompt;
+
+  /// No description provided for @newDmEmptyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No one to message yet'**
+  String get newDmEmptyTitle;
 
   /// No description provided for @newDmErrStart.
   ///
@@ -10108,16 +10642,40 @@ abstract class AppLocalizations {
   /// **'Couldn\'t start chat'**
   String get newDmErrStart;
 
+  /// No description provided for @newDmFindPeopleCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Find people'**
+  String get newDmFindPeopleCta;
+
+  /// No description provided for @newDmFriendsLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load your friends list. Try again in a moment.'**
+  String get newDmFriendsLoadError;
+
   /// No description provided for @newDmNoResults.
   ///
   /// In en, this message translates to:
-  /// **'No one found.'**
+  /// **'No friends match.'**
   String get newDmNoResults;
+
+  /// No description provided for @newDmNoResultsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Try a different name or handle.'**
+  String get newDmNoResultsBody;
+
+  /// No description provided for @newDmNoResultsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No friends match'**
+  String get newDmNoResultsTitle;
 
   /// No description provided for @newDmSearchHint.
   ///
   /// In en, this message translates to:
-  /// **'Search by handle…'**
+  /// **'Search your friends'**
   String get newDmSearchHint;
 
   /// No description provided for @newDmSearching.
@@ -11020,6 +11578,18 @@ abstract class AppLocalizations {
   /// **'Comments on your feedback'**
   String get notifKindFeedbackCommentReceivedTitle;
 
+  /// No description provided for @notifKindFeedbackReplySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'The Luney team replied to a feedback submission you posted.'**
+  String get notifKindFeedbackReplySubtitle;
+
+  /// No description provided for @notifKindFeedbackReplyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Replies from the Luney team'**
+  String get notifKindFeedbackReplyTitle;
+
   /// No description provided for @notifKindFriendAcceptSubtitle.
   ///
   /// In en, this message translates to:
@@ -11733,6 +12303,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Link to your existing account?'**
   String get oauthLinkTitle;
+
+  /// No description provided for @offlineBannerMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re offline. Sends will retry when you\'re back.'**
+  String get offlineBannerMessage;
+
+  /// No description provided for @onboardingAvatarChangeHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to change your photo. You can always update it later in Edit Profile.'**
+  String get onboardingAvatarChangeHint;
+
+  /// No description provided for @onboardingAvatarPickHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to add a photo. You can also skip and add one later.'**
+  String get onboardingAvatarPickHint;
+
+  /// No description provided for @onboardingAvatarSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Adding a photo helps friends recognise you. This step is optional.'**
+  String get onboardingAvatarSub;
+
+  /// No description provided for @onboardingAvatarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile photo'**
+  String get onboardingAvatarTitle;
 
   /// No description provided for @onboardingBioHint.
   ///
@@ -12532,11 +13132,113 @@ abstract class AppLocalizations {
   /// **'Panic Mode'**
   String get panicSettingsTitle;
 
+  /// No description provided for @pinnedMessageAttachmentLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'📎 attachment'**
+  String get pinnedMessageAttachmentLabel;
+
+  /// No description provided for @pinnedMessageEmptyText.
+  ///
+  /// In en, this message translates to:
+  /// **'(no text)'**
+  String get pinnedMessageEmptyText;
+
+  /// No description provided for @pinnedMessagesEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No pinned messages yet. Long-press a message to pin it to the chat.'**
+  String get pinnedMessagesEmpty;
+
+  /// No description provided for @pinnedMessagesEmptyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Long-press any message and tap Pin to add it here.'**
+  String get pinnedMessagesEmptyBody;
+
+  /// No description provided for @pinnedMessagesEmptyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No pinned messages yet'**
+  String get pinnedMessagesEmptyTitle;
+
+  /// No description provided for @pinnedMessagesLimitReached.
+  ///
+  /// In en, this message translates to:
+  /// **'Pin limit reached (25). Unpin one to add another.'**
+  String get pinnedMessagesLimitReached;
+
+  /// No description provided for @pinnedMessagesLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load pinned messages. Try again in a moment.'**
+  String get pinnedMessagesLoadError;
+
+  /// No description provided for @pinnedMessagesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pinned messages {count}'**
+  String pinnedMessagesTitle(String count);
+
+  /// No description provided for @pinnedMessagesUnpinConfirmAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Unpin'**
+  String get pinnedMessagesUnpinConfirmAction;
+
+  /// No description provided for @pinnedMessagesUnpinConfirmBody.
+  ///
+  /// In en, this message translates to:
+  /// **'It will be removed from the pinned messages tray. The original message stays in the chat.'**
+  String get pinnedMessagesUnpinConfirmBody;
+
+  /// No description provided for @pinnedMessagesUnpinConfirmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Unpin this message?'**
+  String get pinnedMessagesUnpinConfirmTitle;
+
+  /// No description provided for @policyLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load this document right now. Try again in a moment.'**
+  String get policyLoadError;
+
+  /// No description provided for @policyNotPublished.
+  ///
+  /// In en, this message translates to:
+  /// **'This document hasn\'t been published yet.'**
+  String get policyNotPublished;
+
+  /// No description provided for @policyPrivacyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get policyPrivacyTitle;
+
+  /// No description provided for @policyTermsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms of Service'**
+  String get policyTermsTitle;
+
+  /// No description provided for @policyVersionLine.
+  ///
+  /// In en, this message translates to:
+  /// **'Version {version} · Published {date}'**
+  String policyVersionLine(int version, String date);
+
   /// No description provided for @postCardDeleteBody.
   ///
   /// In en, this message translates to:
   /// **'This can\'t be undone.'**
   String get postCardDeleteBody;
+
+  /// No description provided for @postCardDeletedSnack.
+  ///
+  /// In en, this message translates to:
+  /// **'Post deleted'**
+  String get postCardDeletedSnack;
 
   /// No description provided for @postCardDeleteTitle.
   ///
@@ -12826,6 +13528,84 @@ abstract class AppLocalizations {
   /// **'T4T'**
   String get postTypeT4t;
 
+  /// No description provided for @preferencesChatEditLastChevronSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Adds a small ↑ inside the chat composer when it\'s empty. Tap it to pop your most recent message into edit mode.'**
+  String get preferencesChatEditLastChevronSubtitle;
+
+  /// No description provided for @preferencesChatEditLastChevronTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Show edit-last-message button'**
+  String get preferencesChatEditLastChevronTitle;
+
+  /// No description provided for @preferencesSectionChat.
+  ///
+  /// In en, this message translates to:
+  /// **'CHAT'**
+  String get preferencesSectionChat;
+
+  /// No description provided for @preferencesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Preferences'**
+  String get preferencesTitle;
+
+  /// No description provided for @presenceAwayLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Away'**
+  String get presenceAwayLabel;
+
+  /// No description provided for @presenceAwaySub.
+  ///
+  /// In en, this message translates to:
+  /// **'Around but not actively using the app'**
+  String get presenceAwaySub;
+
+  /// No description provided for @presenceDndLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Do Not Disturb'**
+  String get presenceDndLabel;
+
+  /// No description provided for @presenceDndSub.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'m here but please don\'t ping me'**
+  String get presenceDndSub;
+
+  /// No description provided for @presenceInvisibleLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Invisible'**
+  String get presenceInvisibleLabel;
+
+  /// No description provided for @presenceInvisibleSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Appear offline to others. You still see their dots.'**
+  String get presenceInvisibleSub;
+
+  /// No description provided for @presenceOnlineLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Online'**
+  String get presenceOnlineLabel;
+
+  /// No description provided for @presenceOnlineSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Active right now'**
+  String get presenceOnlineSub;
+
+  /// No description provided for @presencePickerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Set status'**
+  String get presencePickerTitle;
+
   /// No description provided for @privacyAccountActivitySubtitle.
   ///
   /// In en, this message translates to:
@@ -12964,6 +13744,72 @@ abstract class AppLocalizations {
   /// **'Scheduled for {date}'**
   String privacyDeletionScheduledTitle(String date);
 
+  /// No description provided for @privacyDmAudienceEveryone.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyone'**
+  String get privacyDmAudienceEveryone;
+
+  /// No description provided for @privacyDmAudienceEveryoneDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Anyone on Luney can send you a new DM. Per-group blocks still apply.'**
+  String get privacyDmAudienceEveryoneDesc;
+
+  /// No description provided for @privacyDmAudienceExisting.
+  ///
+  /// In en, this message translates to:
+  /// **'Existing conversations only'**
+  String get privacyDmAudienceExisting;
+
+  /// No description provided for @privacyDmAudienceExistingDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Nobody new can start a DM with you, but people you\'re already messaging keep working.'**
+  String get privacyDmAudienceExistingDesc;
+
+  /// No description provided for @privacyDmAudienceFof.
+  ///
+  /// In en, this message translates to:
+  /// **'Friends of friends'**
+  String get privacyDmAudienceFof;
+
+  /// No description provided for @privacyDmAudienceFofDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Friends + friends of your friends. Per-group blocks still apply.'**
+  String get privacyDmAudienceFofDesc;
+
+  /// No description provided for @privacyDmAudienceFriends.
+  ///
+  /// In en, this message translates to:
+  /// **'Friends only'**
+  String get privacyDmAudienceFriends;
+
+  /// No description provided for @privacyDmAudienceFriendsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Only people you are friends with. Per-group blocks still apply.'**
+  String get privacyDmAudienceFriendsDesc;
+
+  /// No description provided for @privacyDmAudienceNobody.
+  ///
+  /// In en, this message translates to:
+  /// **'Nobody'**
+  String get privacyDmAudienceNobody;
+
+  /// No description provided for @privacyDmAudienceNobodyDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Nobody can DM you, including existing thread partners. Switch back any time to resume.'**
+  String get privacyDmAudienceNobodyDesc;
+
+  /// No description provided for @privacyDmAudienceSheetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Who can DM you'**
+  String get privacyDmAudienceSheetTitle;
+
   /// No description provided for @privacyDownloadTitle.
   ///
   /// In en, this message translates to:
@@ -13048,6 +13894,54 @@ abstract class AppLocalizations {
   /// **'Fuzzy Location'**
   String get privacyFuzzyTitle;
 
+  /// No description provided for @privacyHideMeFromMutualFriendsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t show me in anyone else\'s \'mutual friends\' section. They won\'t see we\'re both friends with this person.'**
+  String get privacyHideMeFromMutualFriendsSubtitle;
+
+  /// No description provided for @privacyHideMeFromMutualFriendsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide Me from Others\' Mutual Friends'**
+  String get privacyHideMeFromMutualFriendsTitle;
+
+  /// No description provided for @privacyHideMutualFriendsOnProfileSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide the \'mutual friends\' section on your profile so visitors don\'t see who you both know.'**
+  String get privacyHideMutualFriendsOnProfileSubtitle;
+
+  /// No description provided for @privacyHideMutualFriendsOnProfileTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide Mutual Friends on My Profile'**
+  String get privacyHideMutualFriendsOnProfileTitle;
+
+  /// No description provided for @privacyHideMutualGroupsOnProfileSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide the \'mutual groups\' section on your profile so visitors don\'t see which groups you share.'**
+  String get privacyHideMutualGroupsOnProfileSubtitle;
+
+  /// No description provided for @privacyHideMutualGroupsOnProfileTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide Mutual Groups on My Profile'**
+  String get privacyHideMutualGroupsOnProfileTitle;
+
+  /// No description provided for @privacyOnlineStatusSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Show others a colored dot on your avatar: green when you\'re active, yellow when you\'re idle, red when you\'ve set Do Not Disturb. Or pick Invisible to appear offline.'**
+  String get privacyOnlineStatusSubtitle;
+
+  /// No description provided for @privacyOnlineStatusTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Online Status'**
+  String get privacyOnlineStatusTitle;
+
   /// No description provided for @privacyReadReceiptsSubtitle.
   ///
   /// In en, this message translates to:
@@ -13071,6 +13965,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'MESSAGING'**
   String get privacySectionMessaging;
+
+  /// No description provided for @privacySectionMutuals.
+  ///
+  /// In en, this message translates to:
+  /// **'MUTUALS'**
+  String get privacySectionMutuals;
 
   /// No description provided for @privacySectionSharing.
   ///
@@ -13096,6 +13996,18 @@ abstract class AppLocalizations {
   /// **'YOUR DATA'**
   String get privacySectionYourData;
 
+  /// No description provided for @privacyShareLinkSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Lets you share a luneyapp.com/u/<handle> link to your profile. Off by default so your account isn\'t discoverable via a guessable URL; flip on if you want a link to give out.'**
+  String get privacyShareLinkSubtitle;
+
+  /// No description provided for @privacyShareLinkTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow profile link sharing'**
+  String get privacyShareLinkTitle;
+
   /// No description provided for @privacyShareSubtitle.
   ///
   /// In en, this message translates to:
@@ -13107,6 +14019,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Allow Sharing My Posts'**
   String get privacyShareTitle;
+
+  /// No description provided for @privacyShowLastSeenSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Let others see a \'Last seen X ago\' line under your name when you\'re offline. The live green dot keeps working when you\'re online; this only controls the trailing line.'**
+  String get privacyShowLastSeenSubtitle;
+
+  /// No description provided for @privacyShowLastSeenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Show Last Seen'**
+  String get privacyShowLastSeenTitle;
 
   /// No description provided for @privacyStealthSubtitle.
   ///
@@ -13143,6 +14067,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Who Can Comment'**
   String get privacyWhoCanCommentTitle;
+
+  /// No description provided for @privacyWhoCanDmSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Outer gate for direct messages. Per-group DM blocks (Group → Settings → \"Allow DMs from members\") narrow this further.'**
+  String get privacyWhoCanDmSubtitle;
+
+  /// No description provided for @privacyWhoCanDmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Who Can DM'**
+  String get privacyWhoCanDmTitle;
 
   /// No description provided for @profileMenuBlock.
   ///
@@ -13186,11 +14122,47 @@ abstract class AppLocalizations {
   /// **'Unblock'**
   String get profileMenuUnblock;
 
+  /// No description provided for @profileMutualFriendsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 mutual friend} other{{count} mutual friends}}'**
+  String profileMutualFriendsTitle(int count);
+
+  /// No description provided for @profileMutualGroupsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 mutual group} other{{count} mutual groups}}'**
+  String profileMutualGroupsTitle(int count);
+
+  /// No description provided for @profileMutualMore.
+  ///
+  /// In en, this message translates to:
+  /// **'more'**
+  String get profileMutualMore;
+
   /// No description provided for @profilePostsEmpty.
   ///
   /// In en, this message translates to:
   /// **'Posts will show up here as {displayName} shares them with you.'**
   String profilePostsEmpty(String displayName);
+
+  /// No description provided for @profilePostsEmptyMineBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your first post lands on your profile + your friends\' home feeds. Tap below to start.'**
+  String get profilePostsEmptyMineBody;
+
+  /// No description provided for @profilePostsEmptyMineCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Create your first post'**
+  String get profilePostsEmptyMineCta;
+
+  /// No description provided for @profilePostsEmptyMineTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing on your wall yet'**
+  String get profilePostsEmptyMineTitle;
 
   /// No description provided for @profilePostsHeader.
   ///
@@ -13227,6 +14199,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Processing…'**
   String get profileReelsSectionStatusProcessing;
+
+  /// No description provided for @profileScreenAvatarPresence.
+  ///
+  /// In en, this message translates to:
+  /// **'Your profile photo. Double-tap to change your online status.'**
+  String get profileScreenAvatarPresence;
 
   /// No description provided for @profileScreenBadgePrivate.
   ///
@@ -13324,6 +14302,12 @@ abstract class AppLocalizations {
   /// **'Settings'**
   String get profileScreenSettings;
 
+  /// No description provided for @profileScreenShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Share my profile'**
+  String get profileScreenShare;
+
   /// No description provided for @profileScreenShowLess.
   ///
   /// In en, this message translates to:
@@ -13335,6 +14319,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'📍 within 5km'**
   String get profileScreenWithinKm;
+
+  /// No description provided for @profileShareOptInBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Off by default. Turn it on if you want a luneyapp.com/u/<handle> link to give out to people.'**
+  String get profileShareOptInBody;
+
+  /// No description provided for @profileShareOptInBullet1.
+  ///
+  /// In en, this message translates to:
+  /// **'Anyone with the link sees your display name, handle, avatar, banner, and bio'**
+  String get profileShareOptInBullet1;
+
+  /// No description provided for @profileShareOptInBullet2.
+  ///
+  /// In en, this message translates to:
+  /// **'DMs, posts, and friend list are NEVER exposed by the link'**
+  String get profileShareOptInBullet2;
+
+  /// No description provided for @profileShareOptInBullet3.
+  ///
+  /// In en, this message translates to:
+  /// **'Scrapers can\'t enumerate accounts when this is off'**
+  String get profileShareOptInBullet3;
+
+  /// No description provided for @profileShareOptInCtaLater.
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get profileShareOptInCtaLater;
+
+  /// No description provided for @profileShareOptInCtaYes.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, enable my share link'**
+  String get profileShareOptInCtaYes;
+
+  /// No description provided for @profileShareOptInErrorOp.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save your share preference'**
+  String get profileShareOptInErrorOp;
+
+  /// No description provided for @profileShareOptInFootnote.
+  ///
+  /// In en, this message translates to:
+  /// **'You can change this any time at Settings → Privacy → Allow profile link sharing.'**
+  String get profileShareOptInFootnote;
+
+  /// No description provided for @profileShareOptInTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Want a shareable profile link?'**
+  String get profileShareOptInTitle;
 
   /// No description provided for @profileSheetAddNote.
   ///
@@ -13924,6 +14962,66 @@ abstract class AppLocalizations {
   /// **'Warn'**
   String get profileSheetWarn;
 
+  /// No description provided for @pushPrePromptBullet1.
+  ///
+  /// In en, this message translates to:
+  /// **'New direct messages from friends'**
+  String get pushPrePromptBullet1;
+
+  /// No description provided for @pushPrePromptBullet2.
+  ///
+  /// In en, this message translates to:
+  /// **'Mentions in chats and posts'**
+  String get pushPrePromptBullet2;
+
+  /// No description provided for @pushPrePromptBullet3.
+  ///
+  /// In en, this message translates to:
+  /// **'Replies and reactions to your posts'**
+  String get pushPrePromptBullet3;
+
+  /// No description provided for @pushPrePromptBullet4.
+  ///
+  /// In en, this message translates to:
+  /// **'Group messages from groups you\'re in'**
+  String get pushPrePromptBullet4;
+
+  /// No description provided for @pushPrePromptBullet5.
+  ///
+  /// In en, this message translates to:
+  /// **'Friend requests and accepts'**
+  String get pushPrePromptBullet5;
+
+  /// No description provided for @pushPrePromptCtaLater.
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get pushPrePromptCtaLater;
+
+  /// No description provided for @pushPrePromptCtaYes.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, enable notifications'**
+  String get pushPrePromptCtaYes;
+
+  /// No description provided for @pushPrePromptFootnote.
+  ///
+  /// In en, this message translates to:
+  /// **'You can fine-tune every category later in Settings → Notifications.'**
+  String get pushPrePromptFootnote;
+
+  /// No description provided for @pushPrePromptSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Push notifications keep you in the loop for the things you\'d hate to miss.'**
+  String get pushPrePromptSubtitle;
+
+  /// No description provided for @pushPrePromptTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Want a heads-up when something happens?'**
+  String get pushPrePromptTitle;
+
   /// No description provided for @recordingModeBannerMessage.
   ///
   /// In en, this message translates to:
@@ -14343,6 +15441,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Me'**
   String get reelsHomeRailMe;
+
+  /// No description provided for @reelsHomeRailUploading.
+  ///
+  /// In en, this message translates to:
+  /// **'Uploading…'**
+  String get reelsHomeRailUploading;
+
+  /// No description provided for @reelsHomeRailUploadingA11y.
+  ///
+  /// In en, this message translates to:
+  /// **'Your reel is uploading'**
+  String get reelsHomeRailUploadingA11y;
 
   /// No description provided for @reelsHomeRailYourReel.
   ///
@@ -16366,6 +17476,174 @@ abstract class AppLocalizations {
   /// **'Send a friendiversary card'**
   String get sendAnniversaryCardTitle;
 
+  /// No description provided for @sessionsActiveAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Active {when}'**
+  String sessionsActiveAgo(String when);
+
+  /// No description provided for @sessionsAppVersion.
+  ///
+  /// In en, this message translates to:
+  /// **'App {version} ({build})'**
+  String sessionsAppVersion(String version, String build);
+
+  /// No description provided for @sessionsDayAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 day ago} other{{count} days ago}}'**
+  String sessionsDayAgo(int count);
+
+  /// No description provided for @sessionsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing to show. You\'re signed in here, that\'s it.'**
+  String get sessionsEmpty;
+
+  /// No description provided for @sessionsHourAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 hour ago} other{{count} hours ago}}'**
+  String sessionsHourAgo(int count);
+
+  /// No description provided for @sessionsIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Every device that\'s signed in to your account. Tap Sign out on any device that isn\'t yours.'**
+  String get sessionsIntro;
+
+  /// No description provided for @sessionsJustNow.
+  ///
+  /// In en, this message translates to:
+  /// **'just now'**
+  String get sessionsJustNow;
+
+  /// No description provided for @sessionsLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load sessions: {error}'**
+  String sessionsLoadError(String error);
+
+  /// No description provided for @sessionsMinAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 min ago} other{{count} min ago}}'**
+  String sessionsMinAgo(int count);
+
+  /// No description provided for @sessionsRevokedSheetMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'{device} is signed out. The device will sign itself out completely the next time it pings (within ~4 hours); until then it can no longer send DMs or post on your account.'**
+  String sessionsRevokedSheetMessage(String device);
+
+  /// No description provided for @sessionsRevokedSheetRubric.
+  ///
+  /// In en, this message translates to:
+  /// **'DEVICE SIGNED OUT'**
+  String get sessionsRevokedSheetRubric;
+
+  /// No description provided for @sessionsRevokedSheetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Device signed out'**
+  String get sessionsRevokedSheetTitle;
+
+  /// No description provided for @sessionsRevokeErrorOp.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t sign out that device'**
+  String get sessionsRevokeErrorOp;
+
+  /// No description provided for @sessionsSignOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign out'**
+  String get sessionsSignOut;
+
+  /// No description provided for @sessionsSignOutOthersConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign out other devices'**
+  String get sessionsSignOutOthersConfirm;
+
+  /// No description provided for @sessionsSignOutOthersDecline.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep them signed in'**
+  String get sessionsSignOutOthersDecline;
+
+  /// No description provided for @sessionsSignOutOthersDoneMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Each of them will need to sign in again with your new password. Your current device stays signed in.'**
+  String get sessionsSignOutOthersDoneMessage;
+
+  /// No description provided for @sessionsSignOutOthersDoneRubric.
+  ///
+  /// In en, this message translates to:
+  /// **'OTHER DEVICES SIGNED OUT'**
+  String get sessionsSignOutOthersDoneRubric;
+
+  /// No description provided for @sessionsSignOutOthersDoneTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No other devices were signed in} =1{1 other device signed out} other{{count} other devices signed out}}'**
+  String sessionsSignOutOthersDoneTitle(int count);
+
+  /// No description provided for @sessionsSignOutOthersErrorOp.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t sign out other devices'**
+  String get sessionsSignOutOthersErrorOp;
+
+  /// No description provided for @sessionsSignOutOthersMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'For safety, you can sign out every other device that\'s currently logged in with your old password. This one stays signed in.'**
+  String get sessionsSignOutOthersMessage;
+
+  /// No description provided for @sessionsSignOutOthersRubric.
+  ///
+  /// In en, this message translates to:
+  /// **'PASSWORD CHANGED'**
+  String get sessionsSignOutOthersRubric;
+
+  /// No description provided for @sessionsSignOutOthersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign out other devices?'**
+  String get sessionsSignOutOthersTitle;
+
+  /// No description provided for @sessionsThisDevice.
+  ///
+  /// In en, this message translates to:
+  /// **'THIS DEVICE'**
+  String get sessionsThisDevice;
+
+  /// No description provided for @sessionsTileLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Active sessions'**
+  String get sessionsTileLabel;
+
+  /// No description provided for @sessionsTileSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'See every device signed in to your account and sign any of them out.'**
+  String get sessionsTileSubtitle;
+
+  /// No description provided for @sessionsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Active sessions'**
+  String get sessionsTitle;
+
+  /// No description provided for @sessionsWeekAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 week ago} other{{count} weeks ago}}'**
+  String sessionsWeekAgo(int count);
+
   /// No description provided for @settingsAboutLuney.
   ///
   /// In en, this message translates to:
@@ -16431,6 +17709,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No permissions loaded.'**
   String get settingsPermsNone;
+
+  /// No description provided for @settingsPreferences.
+  ///
+  /// In en, this message translates to:
+  /// **'Preferences'**
+  String get settingsPreferences;
 
   /// No description provided for @settingsPrivacy.
   ///
@@ -16582,6 +17866,12 @@ abstract class AppLocalizations {
   /// **'post'**
   String get shareableContentPost;
 
+  /// No description provided for @shareableContentProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'profile'**
+  String get shareableContentProfile;
+
   /// No description provided for @shareableContentReel.
   ///
   /// In en, this message translates to:
@@ -16599,6 +17889,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Luney post by @{handle}'**
   String shareablePostSubject(String handle);
+
+  /// No description provided for @shareableProfileBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Find {displayName} on Luney\n@{handle}\n{url}'**
+  String shareableProfileBody(String displayName, String handle, String url);
+
+  /// No description provided for @shareableProfileSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'@{handle} on Luney'**
+  String shareableProfileSubject(String handle);
 
   /// No description provided for @shareableReelBody.
   ///
@@ -16635,6 +17937,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'REEL'**
   String get sharedContentEmbedKindReel;
+
+  /// No description provided for @sharedContentEmbedKindUser.
+  ///
+  /// In en, this message translates to:
+  /// **'PROFILE'**
+  String get sharedContentEmbedKindUser;
 
   /// No description provided for @sharedContentEmbedPhotoPost.
   ///
@@ -18334,6 +19642,60 @@ abstract class AppLocalizations {
   /// **'{name1} and {name2} are typing…'**
   String typingIndicatorTwo(String name1, String name2);
 
+  /// No description provided for @undoSnackDeletedGhost.
+  ///
+  /// In en, this message translates to:
+  /// **'deleted'**
+  String get undoSnackDeletedGhost;
+
+  /// No description provided for @undoSnackRestoredGhost.
+  ///
+  /// In en, this message translates to:
+  /// **'restored'**
+  String get undoSnackRestoredGhost;
+
+  /// No description provided for @undoSnackUndo.
+  ///
+  /// In en, this message translates to:
+  /// **'UNDO'**
+  String get undoSnackUndo;
+
+  /// No description provided for @updateRequiredBodyDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'A new version of Luney is required to keep going. Update from the store and we\'ll pick up right where you left off.'**
+  String get updateRequiredBodyDefault;
+
+  /// No description provided for @updateRequiredCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Update now'**
+  String get updateRequiredCta;
+
+  /// No description provided for @updateRequiredDebugRefreshDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Version-floor check complete.'**
+  String get updateRequiredDebugRefreshDone;
+
+  /// No description provided for @updateRequiredDebugRefreshLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh version floor now'**
+  String get updateRequiredDebugRefreshLabel;
+
+  /// No description provided for @updateRequiredLaunchError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t open the store app. Tap again, or open the Luney listing manually.'**
+  String get updateRequiredLaunchError;
+
+  /// No description provided for @updateRequiredTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Time to update Luney'**
+  String get updateRequiredTitle;
+
   /// No description provided for @vipBadge.
   ///
   /// In en, this message translates to:
@@ -18999,6 +20361,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This response isn\'t available anymore.'**
   String get weeklyPromptThreadUnavailableTitle;
+
+  /// No description provided for @welcomeSheetDismiss.
+  ///
+  /// In en, this message translates to:
+  /// **'Got it, let\'s go'**
+  String get welcomeSheetDismiss;
+
+  /// No description provided for @welcomeSheetSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Here\'s a quick tour of what\'s on offer.'**
+  String get welcomeSheetSubtitle;
+
+  /// No description provided for @welcomeSheetTip1Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Posts from your friends, shared interests, and community surfaces like the Weekly Prompt land here.'**
+  String get welcomeSheetTip1Body;
+
+  /// No description provided for @welcomeSheetTip1Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Home is your feed'**
+  String get welcomeSheetTip1Title;
+
+  /// No description provided for @welcomeSheetTip2Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Join or create groups around interests, communities, or close friends. Each one has its own chat, posts, and reels.'**
+  String get welcomeSheetTip2Body;
+
+  /// No description provided for @welcomeSheetTip2Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups for shared spaces'**
+  String get welcomeSheetTip2Title;
+
+  /// No description provided for @welcomeSheetTip3Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a friend request from someone\'s profile, then start a 1:1 conversation. Photos and drafts stay encrypted on your device.'**
+  String get welcomeSheetTip3Body;
+
+  /// No description provided for @welcomeSheetTip3Title.
+  ///
+  /// In en, this message translates to:
+  /// **'DMs for private chats'**
+  String get welcomeSheetTip3Title;
+
+  /// No description provided for @welcomeSheetTip4Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a short video reel, a longer post, or join the daily Weekly Prompt to hear what the community thinks.'**
+  String get welcomeSheetTip4Body;
+
+  /// No description provided for @welcomeSheetTip4Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Reels, posts, and prompts'**
+  String get welcomeSheetTip4Title;
+
+  /// No description provided for @welcomeSheetTip5Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings → Privacy hides your activity, locks your account in Panic Mode, and lets you mute or block anyone, any time.'**
+  String get welcomeSheetTip5Body;
+
+  /// No description provided for @welcomeSheetTip5Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety + privacy controls'**
+  String get welcomeSheetTip5Title;
+
+  /// No description provided for @welcomeSheetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to Luney'**
+  String get welcomeSheetTitle;
+
+  /// No description provided for @whatsNewSheetDismiss.
+  ///
+  /// In en, this message translates to:
+  /// **'Got it'**
+  String get whatsNewSheetDismiss;
+
+  /// No description provided for @whatsNewSheetSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A quick tour of what we\'ve added in this update.'**
+  String get whatsNewSheetSubtitle;
+
+  /// No description provided for @whatsNewSheetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s New'**
+  String get whatsNewSheetTitle;
 }
 
 class _AppLocalizationsDelegate

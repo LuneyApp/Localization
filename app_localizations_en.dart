@@ -17,7 +17,30 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get aboutDebugForceResyncDone =>
+      'Session rotated and caches cleared. Lists will refetch as you open them.';
+
+  @override
+  String get aboutDebugForceResyncLabel => 'Force resync (rotate session)';
+
+  @override
+  String get aboutDebugResetFirstRunDone =>
+      'Cleared. Kill the app from the OS app-switcher and relaunch, the Welcome sheet and What\'s New sheet will fire again on next cold start.';
+
+  @override
+  String get aboutDebugResetFirstRunLabel => 'Reset first-run sheets';
+
+  @override
+  String get aboutPrivacy => 'Privacy Policy';
+
+  @override
+  String get aboutRateApp => 'Rate Luney';
+
+  @override
   String get aboutSectionRead => 'READ';
+
+  @override
+  String get aboutTerms => 'Terms of Service';
 
   @override
   String get aboutTitle => 'About';
@@ -753,6 +776,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get blockedUsersEmpty => 'You haven\'t blocked anyone';
 
   @override
+  String get blockedUsersEmptyBody =>
+      'If you ever block someone, they show up here so you can unblock them later.';
+
+  @override
   String blockedUsersLoadError(String error) {
     return 'We couldn\'t load your blocked users right now. Try again in a moment. ($error)';
   }
@@ -865,6 +892,27 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get chatComposerAttachPhoto => 'Attach photo';
+
+  @override
+  String get chatComposerCancelEdit => 'Cancel edit';
+
+  @override
+  String get chatComposerCancelReply => 'Cancel reply';
+
+  @override
+  String get chatComposerRemovePhoto => 'Remove photo';
+
+  @override
+  String get chatComposerSaveEdit => 'Save edit';
+
+  @override
+  String get chatComposerSend => 'Send message';
+
+  @override
+  String get chatRealtimeConnecting => 'Connecting…';
+
+  @override
   String get commentsCancelEdit => 'Cancel edit';
 
   @override
@@ -893,6 +941,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get commentsDeleteBody => 'Replies under it will be removed too.';
 
   @override
+  String get commentsDeletedSnack => 'Comment deleted';
+
+  @override
   String get commentsDeleteTitle => 'Delete this comment?';
 
   @override
@@ -912,6 +963,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get commentsEmptyBody => 'Be the first to say something kind.';
+
+  @override
+  String get commentsEmptyCta => 'Add the first comment';
 
   @override
   String get commentsEmptyTitle => 'No comments yet';
@@ -1843,10 +1897,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dmBubbleVerbEvent => 'event';
 
   @override
+  String get dmBubbleVerbPin => 'pinned a message';
+
+  @override
   String get dmBubbleVerbScreenRecording => 'started screen recording';
 
   @override
   String get dmBubbleVerbScreenshot => 'took a screenshot';
+
+  @override
+  String get dmBubbleVerbUnpin => 'unpinned a message';
 
   @override
   String get dmBubbleYou => 'You';
@@ -1856,13 +1916,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dmChatBlockedBody =>
-      'One of you blocked the other. You can still scroll the history above, but new messages won\'t send.';
+      'Messages aren\'t going through right now. They may have changed their DM settings, or one of you may have blocked the other. You can still scroll the history above. If you blocked them by accident, you can unblock them from their profile sheet.';
 
   @override
-  String get dmChatBlockedRubric => 'MESSAGING BLOCKED';
+  String get dmChatBlockedRubric => 'MESSAGES PAUSED';
 
   @override
-  String get dmChatBlockedTitle => 'You can no longer message this user';
+  String get dmChatBlockedTitle => 'New messages can\'t be sent right now';
 
   @override
   String get dmChatCloseSearch => 'Close search';
@@ -1875,6 +1935,9 @@ class AppLocalizationsEn extends AppLocalizations {
       'This removes it for both of you. Can\'t be undone.';
 
   @override
+  String get dmChatDeletedSnack => 'Message deleted';
+
+  @override
   String get dmChatDeleteTitle => 'Delete this message?';
 
   @override
@@ -1882,6 +1945,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dmChatEditingBanner => 'Editing message';
+
+  @override
+  String get dmChatEditLastMessageTooltip => 'Edit last message';
 
   @override
   String get dmChatEmoji => 'Emoji';
@@ -1906,6 +1972,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dmChatErrSendGif => 'Couldn\'t send the GIF';
 
   @override
+  String get dmChatFailedA11y => 'Message failed to send. Tap to retry.';
+
+  @override
+  String get dmChatFailedRetry => 'Tap to retry';
+
+  @override
   String get dmChatGone => 'This conversation is no longer available.';
 
   @override
@@ -1926,14 +1998,39 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dmChatMenuFavGif => 'Favourite GIF';
 
   @override
+  String get dmChatMenuPinMessage => 'Pin to chat';
+
+  @override
   String get dmChatMenuReply => 'Reply';
 
   @override
   String get dmChatMenuUnfavGif => 'Remove from favourites';
 
   @override
+  String get dmChatMenuUnpinMessage => 'Unpin from chat';
+
+  @override
   String dmChatNoSearchMatch(String query) {
     return 'No messages match \"$query\".';
+  }
+
+  @override
+  String get dmChatOpenPinnedMessages => 'View pinned messages';
+
+  @override
+  String get dmChatPreviewPinMine => '📌 You pinned a message';
+
+  @override
+  String dmChatPreviewPinOther(String name) {
+    return '📌 $name pinned a message';
+  }
+
+  @override
+  String get dmChatPreviewUnpinMine => 'You unpinned a message';
+
+  @override
+  String dmChatPreviewUnpinOther(String name) {
+    return '$name unpinned a message';
   }
 
   @override
@@ -1970,6 +2067,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dmChatTitleFallback => 'Message';
 
   @override
+  String get dmChatUnreadDivider => 'New messages';
+
+  @override
   String get dmChatWarnUser => 'Warn this user';
 
   @override
@@ -1998,6 +2098,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dmsDeleteTitle => 'Delete this conversation?';
 
   @override
+  String get dmSelfOptOutBody =>
+      'Your \"Who Can DM\" setting is set to Nobody, so you can\'t start or send messages. Change it in Settings → Privacy to start messaging again.';
+
+  @override
+  String get dmSelfOptOutRubric => 'DIRECT MESSAGES OFF';
+
+  @override
+  String get dmSelfOptOutTitle => 'You\'ve turned off direct messages';
+
+  @override
   String get dmsEmptyTitle => 'No conversations yet.';
 
   @override
@@ -2007,6 +2117,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String dmsLoadError(String error) {
     return 'We couldn\'t load your conversations right now. Try again in a moment. ($error)';
   }
+
+  @override
+  String get dmsMarkAsUnread => 'Mark as unread';
 
   @override
   String get dmsNewMessageButton => '+ New message';
@@ -2021,6 +2134,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String dmsNoMatch(String query) {
     return 'No conversations match \"$query\".';
   }
+
+  @override
+  String get dmsPinConversation => 'Pin to top';
+
+  @override
+  String get dmsPreviewDraftPrefix => 'Draft: ';
 
   @override
   String get dmsPreviewNoMessages => 'No messages yet. Say hi 👋';
@@ -2052,6 +2171,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dmsTitle => 'Messages';
+
+  @override
+  String get dmsUnpinConversation => 'Unpin';
 
   @override
   String get draftsListConfirmBody =>
@@ -2753,6 +2875,24 @@ class AppLocalizationsEn extends AppLocalizations {
       'Feedback isn\'t available right now. Try again later.';
 
   @override
+  String get feedPendingDismissA11y => 'Dismiss this failed post';
+
+  @override
+  String get feedPendingFailedRetry => 'Send failed · Tap to retry';
+
+  @override
+  String get feedPendingFailedShort => 'send failed';
+
+  @override
+  String get feedPendingNow => 'now';
+
+  @override
+  String get feedPendingPosting => 'Posting…';
+
+  @override
+  String get feedPendingTapToRetryA11y => 'Tap to retry sending this post';
+
+  @override
   String get forgotPasswordBackTooltip => 'Back to sign in';
 
   @override
@@ -2821,11 +2961,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get friendRequestsActionDecline => 'Decline';
 
   @override
+  String get friendRequestsEmptyFindPeopleCta => 'Find people';
+
+  @override
   String get friendRequestsEmptyReceived => 'No requests waiting on you.';
+
+  @override
+  String get friendRequestsEmptyReceivedBody =>
+      'When someone sends you a friend request, it shows up here.';
 
   @override
   String get friendRequestsEmptySent =>
       'You haven\'t sent any pending requests.';
+
+  @override
+  String get friendRequestsEmptySentBody =>
+      'Send one from someone\'s profile and it\'ll wait here until they accept or decline.';
 
   @override
   String get friendRequestsErrAccept => 'Couldn\'t accept the friend request';
@@ -2889,6 +3040,9 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get friendsListEmptyMineBody =>
       'Tap a profile and hit Add Friend to start a connection.';
+
+  @override
+  String get friendsListEmptyMineCta => 'Check friend requests';
 
   @override
   String get friendsListEmptyMineTitle => 'No friends yet';
@@ -2955,10 +3109,16 @@ class AppLocalizationsEn extends AppLocalizations {
       'You\'re deleting another member\'s message as a group admin/mod. This removes it for everyone in the group.';
 
   @override
+  String get groupChatDeletedSnack => 'Message deleted';
+
+  @override
   String get groupChatDeleteTitle => 'Delete message?';
 
   @override
   String get groupChatDeleteTitleAdmin => 'Delete this message?';
+
+  @override
+  String get groupChatEditLastMessageTooltip => 'Edit last message';
 
   @override
   String get groupChatEmpty => 'No messages yet. Say hi 👋';
@@ -3005,6 +3165,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get groupChatMenuFavGif => 'Favourite GIF';
 
   @override
+  String get groupChatMenuPinMessage => 'Pin to chat';
+
+  @override
   String get groupChatMenuReply => 'Reply';
 
   @override
@@ -3017,6 +3180,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get groupChatMenuUnfavGif => 'Remove from favourites';
 
   @override
+  String get groupChatMenuUnpinMessage => 'Unpin from chat';
+
+  @override
   String get groupChatMomentShort => 'a moment';
 
   @override
@@ -3026,6 +3192,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String groupChatMuteLiftsIn(String remaining) {
     return 'Mute lifts in $remaining.';
   }
+
+  @override
+  String get groupChatOpenPinnedMessages => 'View pinned messages';
+
+  @override
+  String get groupChatPinAdminOnly => 'Only admins can pin messages';
 
   @override
   String groupChatRecordingWarnFailed(String error) {
@@ -3074,10 +3246,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get groupChatVerbJoined => 'joined the group';
 
   @override
+  String get groupChatVerbPin => 'pinned a message';
+
+  @override
   String get groupChatVerbScreenRecording => 'started screen recording';
 
   @override
   String get groupChatVerbScreenshot => 'took a screenshot';
+
+  @override
+  String get groupChatVerbUnpin => 'unpinned a message';
 
   @override
   String get groupChatYou => 'You';
@@ -4011,6 +4189,13 @@ class AppLocalizationsEn extends AppLocalizations {
       'Welcome guests: what to know before joining (up to 4000 chars)';
 
   @override
+  String get groupSettingsHideFromMutualsToggle => 'Hide from Mutual Groups';
+
+  @override
+  String get groupSettingsHideFromMutualsToggleSub =>
+      'Don\'t show this group in anyone\'s \"mutual groups\" section on profiles. Useful for sensitive communities.';
+
+  @override
   String get groupSettingsHideWhoJoined => 'Hide who joined';
 
   @override
@@ -4608,6 +4793,14 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get hashtagGroupsError => 'Couldn\'t load groups.';
+
+  @override
+  String hashtagNoGroups(String tag) {
+    return 'No groups with #$tag yet.';
+  }
+
+  @override
   String hashtagNoPosts(String tag) {
     return 'No posts with #$tag yet.';
   }
@@ -4622,6 +4815,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get hashtagReelsError => 'Couldn\'t load reels.';
+
+  @override
+  String get hashtagTabGroups => 'Groups';
 
   @override
   String get hashtagTabPosts => 'Posts';
@@ -5129,10 +5325,28 @@ class AppLocalizationsEn extends AppLocalizations {
   String get imageCropTitle => 'Crop photo';
 
   @override
+  String get inAppActorLuneyRewind => 'Luney Rewind';
+
+  @override
   String get inAppActorLuneyStaff => 'Luney Staff';
 
   @override
+  String get inAppActorLuneyTeam => 'Luney team';
+
+  @override
+  String get inAppActorModerationTeam => 'Luney moderation team';
+
+  @override
+  String get inAppActorNewBadge => 'New badge';
+
+  @override
   String get inAppActorSomeone => 'Someone';
+
+  @override
+  String get inAppActorYourGroup => 'Your group';
+
+  @override
+  String get inAppActorYourReel => 'Your reel';
 
   @override
   String get inAppAnotherMember => 'another member';
@@ -5327,6 +5541,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get inAppModWarn => 'A warning was issued on your account.';
 
   @override
+  String get inlineReelFailed => 'Reel failed';
+
+  @override
+  String get inlineReelProcessing => 'Processing…';
+
+  @override
   String get inviteAlreadyMember => 'You\'re already in this group.';
 
   @override
@@ -5384,6 +5604,32 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get languageSystemDefault => 'System default';
+
+  @override
+  String get lastSeenActiveNow => 'Active now';
+
+  @override
+  String lastSeenDaysAgo(int n) {
+    return 'Last seen ${n}d ago';
+  }
+
+  @override
+  String lastSeenHoursAgo(int n) {
+    return 'Last seen ${n}h ago';
+  }
+
+  @override
+  String get lastSeenLongAgo => 'Last seen a while ago';
+
+  @override
+  String lastSeenMinutesAgo(int n) {
+    return 'Last seen $n min ago';
+  }
+
+  @override
+  String lastSeenWeeksAgo(int n) {
+    return 'Last seen ${n}w ago';
+  }
 
   @override
   String get lobbiesListDisabledBanner =>
@@ -5919,6 +6165,66 @@ class AppLocalizationsEn extends AppLocalizations {
   String get mentionTextRubric => 'MENTION';
 
   @override
+  String milestoneAnniversaryAccountBirthdayTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count years on Luney today',
+      one: '1 year on Luney today',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get milestoneAnniversaryCardSent => 'Card sent 💌';
+
+  @override
+  String milestoneAnniversaryFirstDmTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count years of chatting today',
+      one: '1 year of chatting today',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String milestoneAnniversaryGroupJoinTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count years in this group today',
+      one: '1 year in this group today',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get milestoneAnniversaryTapToSend => 'Tap to send a card';
+
+  @override
+  String get muteDuration1Hour => 'Mute for 1 hour';
+
+  @override
+  String get muteDuration8Hours => 'Mute for 8 hours';
+
+  @override
+  String get muteDurationForever => 'Mute until I turn it back on';
+
+  @override
+  String get muteDurationSheetTitle => 'Mute notifications';
+
+  @override
+  String get muteFailed => 'Couldn\'t update mute';
+
+  @override
+  String get muteThreadMute => 'Mute notifications';
+
+  @override
+  String get muteThreadUnmute => 'Unmute notifications';
+
+  @override
   String get myAchievementsEmptyBody =>
       'Keep using Luney. Some are awarded automatically; others get granted by the team.';
 
@@ -5960,25 +6266,46 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get newDmBlockedBody =>
-      'One of you has blocked the other, so a new DM can\'t start. If you blocked them by accident, unblock them from their profile sheet.';
+      'You can\'t start a new DM with this person right now. They may limit who can DM them, or one of you may have blocked the other. If you blocked them by accident, you can unblock them from their profile sheet.';
 
   @override
-  String get newDmBlockedRubric => 'CONVERSATION BLOCKED';
+  String get newDmBlockedRubric => 'DMS UNAVAILABLE';
 
   @override
-  String get newDmBlockedTitle => 'You can\'t start this conversation';
+  String get newDmBlockedTitle => 'You can\'t start a DM with this person';
 
   @override
-  String get newDmEmptyPrompt => 'Find someone to message. Type a handle.';
+  String get newDmEmptyBody =>
+      'Add a friend from their profile to start a chat, or find someone new.';
+
+  @override
+  String get newDmEmptyPrompt =>
+      'You haven\'t added any friends yet. Send a friend request from someone\'s profile to start a chat.';
+
+  @override
+  String get newDmEmptyTitle => 'No one to message yet';
 
   @override
   String get newDmErrStart => 'Couldn\'t start chat';
 
   @override
-  String get newDmNoResults => 'No one found.';
+  String get newDmFindPeopleCta => 'Find people';
 
   @override
-  String get newDmSearchHint => 'Search by handle…';
+  String get newDmFriendsLoadError =>
+      'Couldn\'t load your friends list. Try again in a moment.';
+
+  @override
+  String get newDmNoResults => 'No friends match.';
+
+  @override
+  String get newDmNoResultsBody => 'Try a different name or handle.';
+
+  @override
+  String get newDmNoResultsTitle => 'No friends match';
+
+  @override
+  String get newDmSearchHint => 'Search your friends';
 
   @override
   String get newDmSearching => 'Searching…';
@@ -6510,6 +6837,13 @@ class AppLocalizationsEn extends AppLocalizations {
       'Comments on your feedback';
 
   @override
+  String get notifKindFeedbackReplySubtitle =>
+      'The Luney team replied to a feedback submission you posted.';
+
+  @override
+  String get notifKindFeedbackReplyTitle => 'Replies from the Luney team';
+
+  @override
   String get notifKindFriendAcceptSubtitle =>
       'Someone accepted your friend request.';
 
@@ -6928,6 +7262,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get oauthLinkTitle => 'Link to your existing account?';
+
+  @override
+  String get offlineBannerMessage =>
+      'You\'re offline. Sends will retry when you\'re back.';
+
+  @override
+  String get onboardingAvatarChangeHint =>
+      'Tap to change your photo. You can always update it later in Edit Profile.';
+
+  @override
+  String get onboardingAvatarPickHint =>
+      'Tap to add a photo. You can also skip and add one later.';
+
+  @override
+  String get onboardingAvatarSub =>
+      'Adding a photo helps friends recognise you. This step is optional.';
+
+  @override
+  String get onboardingAvatarTitle => 'Profile photo';
 
   @override
   String get onboardingBioHint =>
@@ -7352,7 +7705,68 @@ class AppLocalizationsEn extends AppLocalizations {
   String get panicSettingsTitle => 'Panic Mode';
 
   @override
+  String get pinnedMessageAttachmentLabel => '📎 attachment';
+
+  @override
+  String get pinnedMessageEmptyText => '(no text)';
+
+  @override
+  String get pinnedMessagesEmpty =>
+      'No pinned messages yet. Long-press a message to pin it to the chat.';
+
+  @override
+  String get pinnedMessagesEmptyBody =>
+      'Long-press any message and tap Pin to add it here.';
+
+  @override
+  String get pinnedMessagesEmptyTitle => 'No pinned messages yet';
+
+  @override
+  String get pinnedMessagesLimitReached =>
+      'Pin limit reached (25). Unpin one to add another.';
+
+  @override
+  String get pinnedMessagesLoadError =>
+      'Couldn\'t load pinned messages. Try again in a moment.';
+
+  @override
+  String pinnedMessagesTitle(String count) {
+    return 'Pinned messages $count';
+  }
+
+  @override
+  String get pinnedMessagesUnpinConfirmAction => 'Unpin';
+
+  @override
+  String get pinnedMessagesUnpinConfirmBody =>
+      'It will be removed from the pinned messages tray. The original message stays in the chat.';
+
+  @override
+  String get pinnedMessagesUnpinConfirmTitle => 'Unpin this message?';
+
+  @override
+  String get policyLoadError =>
+      'Couldn\'t load this document right now. Try again in a moment.';
+
+  @override
+  String get policyNotPublished => 'This document hasn\'t been published yet.';
+
+  @override
+  String get policyPrivacyTitle => 'Privacy Policy';
+
+  @override
+  String get policyTermsTitle => 'Terms of Service';
+
+  @override
+  String policyVersionLine(int version, String date) {
+    return 'Version $version · Published $date';
+  }
+
+  @override
   String get postCardDeleteBody => 'This can\'t be undone.';
+
+  @override
+  String get postCardDeletedSnack => 'Post deleted';
 
   @override
   String get postCardDeleteTitle => 'Delete this post?';
@@ -7508,6 +7922,48 @@ class AppLocalizationsEn extends AppLocalizations {
   String get postTypeT4t => 'T4T';
 
   @override
+  String get preferencesChatEditLastChevronSubtitle =>
+      'Adds a small ↑ inside the chat composer when it\'s empty. Tap it to pop your most recent message into edit mode.';
+
+  @override
+  String get preferencesChatEditLastChevronTitle =>
+      'Show edit-last-message button';
+
+  @override
+  String get preferencesSectionChat => 'CHAT';
+
+  @override
+  String get preferencesTitle => 'Preferences';
+
+  @override
+  String get presenceAwayLabel => 'Away';
+
+  @override
+  String get presenceAwaySub => 'Around but not actively using the app';
+
+  @override
+  String get presenceDndLabel => 'Do Not Disturb';
+
+  @override
+  String get presenceDndSub => 'I\'m here but please don\'t ping me';
+
+  @override
+  String get presenceInvisibleLabel => 'Invisible';
+
+  @override
+  String get presenceInvisibleSub =>
+      'Appear offline to others. You still see their dots.';
+
+  @override
+  String get presenceOnlineLabel => 'Online';
+
+  @override
+  String get presenceOnlineSub => 'Active right now';
+
+  @override
+  String get presencePickerTitle => 'Set status';
+
+  @override
   String get privacyAccountActivitySubtitle =>
       'Every Luney moderation action on your account: warnings, removals, lifts, outreach.';
 
@@ -7586,6 +8042,44 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get privacyDmAudienceEveryone => 'Everyone';
+
+  @override
+  String get privacyDmAudienceEveryoneDesc =>
+      'Anyone on Luney can send you a new DM. Per-group blocks still apply.';
+
+  @override
+  String get privacyDmAudienceExisting => 'Existing conversations only';
+
+  @override
+  String get privacyDmAudienceExistingDesc =>
+      'Nobody new can start a DM with you, but people you\'re already messaging keep working.';
+
+  @override
+  String get privacyDmAudienceFof => 'Friends of friends';
+
+  @override
+  String get privacyDmAudienceFofDesc =>
+      'Friends + friends of your friends. Per-group blocks still apply.';
+
+  @override
+  String get privacyDmAudienceFriends => 'Friends only';
+
+  @override
+  String get privacyDmAudienceFriendsDesc =>
+      'Only people you are friends with. Per-group blocks still apply.';
+
+  @override
+  String get privacyDmAudienceNobody => 'Nobody';
+
+  @override
+  String get privacyDmAudienceNobodyDesc =>
+      'Nobody can DM you, including existing thread partners. Switch back any time to resume.';
+
+  @override
+  String get privacyDmAudienceSheetTitle => 'Who can DM you';
+
+  @override
   String get privacyDownloadTitle => 'Download My Data';
 
   @override
@@ -7653,6 +8147,37 @@ class AppLocalizationsEn extends AppLocalizations {
   String get privacyFuzzyTitle => 'Fuzzy Location';
 
   @override
+  String get privacyHideMeFromMutualFriendsSubtitle =>
+      'Don\'t show me in anyone else\'s \'mutual friends\' section. They won\'t see we\'re both friends with this person.';
+
+  @override
+  String get privacyHideMeFromMutualFriendsTitle =>
+      'Hide Me from Others\' Mutual Friends';
+
+  @override
+  String get privacyHideMutualFriendsOnProfileSubtitle =>
+      'Hide the \'mutual friends\' section on your profile so visitors don\'t see who you both know.';
+
+  @override
+  String get privacyHideMutualFriendsOnProfileTitle =>
+      'Hide Mutual Friends on My Profile';
+
+  @override
+  String get privacyHideMutualGroupsOnProfileSubtitle =>
+      'Hide the \'mutual groups\' section on your profile so visitors don\'t see which groups you share.';
+
+  @override
+  String get privacyHideMutualGroupsOnProfileTitle =>
+      'Hide Mutual Groups on My Profile';
+
+  @override
+  String get privacyOnlineStatusSubtitle =>
+      'Show others a colored dot on your avatar: green when you\'re active, yellow when you\'re idle, red when you\'ve set Do Not Disturb. Or pick Invisible to appear offline.';
+
+  @override
+  String get privacyOnlineStatusTitle => 'Online Status';
+
+  @override
   String get privacyReadReceiptsSubtitle =>
       'Let people see when you\'ve read their DMs. Turn off and you won\'t see theirs either.';
 
@@ -7664,6 +8189,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacySectionMessaging => 'MESSAGING';
+
+  @override
+  String get privacySectionMutuals => 'MUTUALS';
 
   @override
   String get privacySectionSharing => 'SHARING';
@@ -7678,11 +8206,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get privacySectionYourData => 'YOUR DATA';
 
   @override
+  String get privacyShareLinkSubtitle =>
+      'Lets you share a luneyapp.com/u/<handle> link to your profile. Off by default so your account isn\'t discoverable via a guessable URL; flip on if you want a link to give out.';
+
+  @override
+  String get privacyShareLinkTitle => 'Allow profile link sharing';
+
+  @override
   String get privacyShareSubtitle =>
       'Lets others share your posts outside Luney. Applies to all your posts.';
 
   @override
   String get privacyShareTitle => 'Allow Sharing My Posts';
+
+  @override
+  String get privacyShowLastSeenSubtitle =>
+      'Let others see a \'Last seen X ago\' line under your name when you\'re offline. The live green dot keeps working when you\'re online; this only controls the trailing line.';
+
+  @override
+  String get privacyShowLastSeenTitle => 'Show Last Seen';
 
   @override
   String get privacyStealthSubtitle =>
@@ -7703,6 +8245,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacyWhoCanCommentTitle => 'Who Can Comment';
+
+  @override
+  String get privacyWhoCanDmSubtitle =>
+      'Outer gate for direct messages. Per-group DM blocks (Group → Settings → \"Allow DMs from members\") narrow this further.';
+
+  @override
+  String get privacyWhoCanDmTitle => 'Who Can DM';
 
   @override
   String get profileMenuBlock => 'Block';
@@ -7729,9 +8278,44 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileMenuUnblock => 'Unblock';
 
   @override
+  String profileMutualFriendsTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count mutual friends',
+      one: '1 mutual friend',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String profileMutualGroupsTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count mutual groups',
+      one: '1 mutual group',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get profileMutualMore => 'more';
+
+  @override
   String profilePostsEmpty(String displayName) {
     return 'Posts will show up here as $displayName shares them with you.';
   }
+
+  @override
+  String get profilePostsEmptyMineBody =>
+      'Your first post lands on your profile + your friends\' home feeds. Tap below to start.';
+
+  @override
+  String get profilePostsEmptyMineCta => 'Create your first post';
+
+  @override
+  String get profilePostsEmptyMineTitle => 'Nothing on your wall yet';
 
   @override
   String get profilePostsHeader => 'POSTS';
@@ -7750,6 +8334,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profileReelsSectionStatusProcessing => 'Processing…';
+
+  @override
+  String get profileScreenAvatarPresence =>
+      'Your profile photo. Double-tap to change your online status.';
 
   @override
   String get profileScreenBadgePrivate => '🔒 Private';
@@ -7818,10 +8406,45 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileScreenSettings => 'Settings';
 
   @override
+  String get profileScreenShare => 'Share my profile';
+
+  @override
   String get profileScreenShowLess => 'Show less';
 
   @override
   String get profileScreenWithinKm => '📍 within 5km';
+
+  @override
+  String get profileShareOptInBody =>
+      'Off by default. Turn it on if you want a luneyapp.com/u/<handle> link to give out to people.';
+
+  @override
+  String get profileShareOptInBullet1 =>
+      'Anyone with the link sees your display name, handle, avatar, banner, and bio';
+
+  @override
+  String get profileShareOptInBullet2 =>
+      'DMs, posts, and friend list are NEVER exposed by the link';
+
+  @override
+  String get profileShareOptInBullet3 =>
+      'Scrapers can\'t enumerate accounts when this is off';
+
+  @override
+  String get profileShareOptInCtaLater => 'Not now';
+
+  @override
+  String get profileShareOptInCtaYes => 'Yes, enable my share link';
+
+  @override
+  String get profileShareOptInErrorOp => 'Couldn\'t save your share preference';
+
+  @override
+  String get profileShareOptInFootnote =>
+      'You can change this any time at Settings → Privacy → Allow profile link sharing.';
+
+  @override
+  String get profileShareOptInTitle => 'Want a shareable profile link?';
 
   @override
   String get profileSheetAddNote => 'Add a note';
@@ -8184,6 +8807,38 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileSheetWarn => 'Warn';
 
   @override
+  String get pushPrePromptBullet1 => 'New direct messages from friends';
+
+  @override
+  String get pushPrePromptBullet2 => 'Mentions in chats and posts';
+
+  @override
+  String get pushPrePromptBullet3 => 'Replies and reactions to your posts';
+
+  @override
+  String get pushPrePromptBullet4 => 'Group messages from groups you\'re in';
+
+  @override
+  String get pushPrePromptBullet5 => 'Friend requests and accepts';
+
+  @override
+  String get pushPrePromptCtaLater => 'Not now';
+
+  @override
+  String get pushPrePromptCtaYes => 'Yes, enable notifications';
+
+  @override
+  String get pushPrePromptFootnote =>
+      'You can fine-tune every category later in Settings → Notifications.';
+
+  @override
+  String get pushPrePromptSubtitle =>
+      'Push notifications keep you in the loop for the things you\'d hate to miss.';
+
+  @override
+  String get pushPrePromptTitle => 'Want a heads-up when something happens?';
+
+  @override
   String recordingModeBannerMessage(String until) {
     return 'Recording mode: screen protection is OFF on this device$until.';
   }
@@ -8418,6 +9073,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get reelsHomeRailMe => 'Me';
+
+  @override
+  String get reelsHomeRailUploading => 'Uploading…';
+
+  @override
+  String get reelsHomeRailUploadingA11y => 'Your reel is uploading';
 
   @override
   String get reelsHomeRailYourReel => 'Your reel';
@@ -9638,6 +10299,144 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sendAnniversaryCardTitle => 'Send a friendiversary card';
 
   @override
+  String sessionsActiveAgo(String when) {
+    return 'Active $when';
+  }
+
+  @override
+  String sessionsAppVersion(String version, String build) {
+    return 'App $version ($build)';
+  }
+
+  @override
+  String sessionsDayAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days ago',
+      one: '1 day ago',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get sessionsEmpty =>
+      'Nothing to show. You\'re signed in here, that\'s it.';
+
+  @override
+  String sessionsHourAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hours ago',
+      one: '1 hour ago',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get sessionsIntro =>
+      'Every device that\'s signed in to your account. Tap Sign out on any device that isn\'t yours.';
+
+  @override
+  String get sessionsJustNow => 'just now';
+
+  @override
+  String sessionsLoadError(String error) {
+    return 'Couldn\'t load sessions: $error';
+  }
+
+  @override
+  String sessionsMinAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count min ago',
+      one: '1 min ago',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String sessionsRevokedSheetMessage(String device) {
+    return '$device is signed out. The device will sign itself out completely the next time it pings (within ~4 hours); until then it can no longer send DMs or post on your account.';
+  }
+
+  @override
+  String get sessionsRevokedSheetRubric => 'DEVICE SIGNED OUT';
+
+  @override
+  String get sessionsRevokedSheetTitle => 'Device signed out';
+
+  @override
+  String get sessionsRevokeErrorOp => 'Couldn\'t sign out that device';
+
+  @override
+  String get sessionsSignOut => 'Sign out';
+
+  @override
+  String get sessionsSignOutOthersConfirm => 'Sign out other devices';
+
+  @override
+  String get sessionsSignOutOthersDecline => 'Keep them signed in';
+
+  @override
+  String get sessionsSignOutOthersDoneMessage =>
+      'Each of them will need to sign in again with your new password. Your current device stays signed in.';
+
+  @override
+  String get sessionsSignOutOthersDoneRubric => 'OTHER DEVICES SIGNED OUT';
+
+  @override
+  String sessionsSignOutOthersDoneTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count other devices signed out',
+      one: '1 other device signed out',
+      zero: 'No other devices were signed in',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get sessionsSignOutOthersErrorOp => 'Couldn\'t sign out other devices';
+
+  @override
+  String get sessionsSignOutOthersMessage =>
+      'For safety, you can sign out every other device that\'s currently logged in with your old password. This one stays signed in.';
+
+  @override
+  String get sessionsSignOutOthersRubric => 'PASSWORD CHANGED';
+
+  @override
+  String get sessionsSignOutOthersTitle => 'Sign out other devices?';
+
+  @override
+  String get sessionsThisDevice => 'THIS DEVICE';
+
+  @override
+  String get sessionsTileLabel => 'Active sessions';
+
+  @override
+  String get sessionsTileSubtitle =>
+      'See every device signed in to your account and sign any of them out.';
+
+  @override
+  String get sessionsTitle => 'Active sessions';
+
+  @override
+  String sessionsWeekAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count weeks ago',
+      one: '1 week ago',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get settingsAboutLuney => 'About Luney';
 
   @override
@@ -9671,6 +10470,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsPermsNone => 'No permissions loaded.';
+
+  @override
+  String get settingsPreferences => 'Preferences';
 
   @override
   String get settingsPrivacy => 'Privacy';
@@ -9750,6 +10552,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get shareableContentPost => 'post';
 
   @override
+  String get shareableContentProfile => 'profile';
+
+  @override
   String get shareableContentReel => 'reel';
 
   @override
@@ -9760,6 +10565,16 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String shareablePostSubject(String handle) {
     return 'Luney post by @$handle';
+  }
+
+  @override
+  String shareableProfileBody(String displayName, String handle, String url) {
+    return 'Find $displayName on Luney\n@$handle\n$url';
+  }
+
+  @override
+  String shareableProfileSubject(String handle) {
+    return '@$handle on Luney';
   }
 
   @override
@@ -9783,6 +10598,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sharedContentEmbedKindReel => 'REEL';
+
+  @override
+  String get sharedContentEmbedKindUser => 'PROFILE';
 
   @override
   String get sharedContentEmbedPhotoPost => 'Photo post';
@@ -10790,6 +11608,35 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get undoSnackDeletedGhost => 'deleted';
+
+  @override
+  String get undoSnackRestoredGhost => 'restored';
+
+  @override
+  String get undoSnackUndo => 'UNDO';
+
+  @override
+  String get updateRequiredBodyDefault =>
+      'A new version of Luney is required to keep going. Update from the store and we\'ll pick up right where you left off.';
+
+  @override
+  String get updateRequiredCta => 'Update now';
+
+  @override
+  String get updateRequiredDebugRefreshDone => 'Version-floor check complete.';
+
+  @override
+  String get updateRequiredDebugRefreshLabel => 'Refresh version floor now';
+
+  @override
+  String get updateRequiredLaunchError =>
+      'Couldn\'t open the store app. Tap again, or open the Luney listing manually.';
+
+  @override
+  String get updateRequiredTitle => 'Time to update Luney';
+
+  @override
   String get vipBadge => 'VIP';
 
   @override
@@ -11177,4 +12024,59 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get weeklyPromptThreadUnavailableTitle =>
       'This response isn\'t available anymore.';
+
+  @override
+  String get welcomeSheetDismiss => 'Got it, let\'s go';
+
+  @override
+  String get welcomeSheetSubtitle =>
+      'Here\'s a quick tour of what\'s on offer.';
+
+  @override
+  String get welcomeSheetTip1Body =>
+      'Posts from your friends, shared interests, and community surfaces like the Weekly Prompt land here.';
+
+  @override
+  String get welcomeSheetTip1Title => 'Home is your feed';
+
+  @override
+  String get welcomeSheetTip2Body =>
+      'Join or create groups around interests, communities, or close friends. Each one has its own chat, posts, and reels.';
+
+  @override
+  String get welcomeSheetTip2Title => 'Groups for shared spaces';
+
+  @override
+  String get welcomeSheetTip3Body =>
+      'Send a friend request from someone\'s profile, then start a 1:1 conversation. Photos and drafts stay encrypted on your device.';
+
+  @override
+  String get welcomeSheetTip3Title => 'DMs for private chats';
+
+  @override
+  String get welcomeSheetTip4Body =>
+      'Share a short video reel, a longer post, or join the daily Weekly Prompt to hear what the community thinks.';
+
+  @override
+  String get welcomeSheetTip4Title => 'Reels, posts, and prompts';
+
+  @override
+  String get welcomeSheetTip5Body =>
+      'Settings → Privacy hides your activity, locks your account in Panic Mode, and lets you mute or block anyone, any time.';
+
+  @override
+  String get welcomeSheetTip5Title => 'Safety + privacy controls';
+
+  @override
+  String get welcomeSheetTitle => 'Welcome to Luney';
+
+  @override
+  String get whatsNewSheetDismiss => 'Got it';
+
+  @override
+  String get whatsNewSheetSubtitle =>
+      'A quick tour of what we\'ve added in this update.';
+
+  @override
+  String get whatsNewSheetTitle => 'What\'s New';
 }

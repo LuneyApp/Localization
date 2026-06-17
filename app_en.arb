@@ -5,7 +5,14 @@
   "@aboutCommit": {
     "placeholders": { "hash": { "type": "String" } }
   },
+  "aboutDebugForceResyncDone": "Session rotated and caches cleared. Lists will refetch as you open them.",
+  "aboutDebugForceResyncLabel": "Force resync (rotate session)",
+  "aboutDebugResetFirstRunDone": "Cleared. Kill the app from the OS app-switcher and relaunch, the Welcome sheet and What's New sheet will fire again on next cold start.",
+  "aboutDebugResetFirstRunLabel": "Reset first-run sheets",
+  "aboutPrivacy": "Privacy Policy",
+  "aboutRateApp": "Rate Luney",
   "aboutSectionRead": "READ",
+  "aboutTerms": "Terms of Service",
   "aboutTitle": "About",
   "aboutVersion": "Version {version} (build {build})",
   "@aboutVersion": {
@@ -369,6 +376,7 @@
   "appShellWelcomeBackTitle": "Welcome back",
 
   "blockedUsersEmpty": "You haven't blocked anyone",
+  "blockedUsersEmptyBody": "If you ever block someone, they show up here so you can unblock them later.",
   "blockedUsersLoadError": "We couldn't load your blocked users right now. Try again in a moment. ({error})",
   "@blockedUsersLoadError": {
     "placeholders": { "error": { "type": "String" } }
@@ -414,6 +422,13 @@
   "@chatBubbleReplyingTo": {
     "placeholders": { "name": { "type": "String" } }
   },
+  "chatComposerAttachPhoto": "Attach photo",
+  "chatComposerCancelEdit": "Cancel edit",
+  "chatComposerCancelReply": "Cancel reply",
+  "chatComposerRemovePhoto": "Remove photo",
+  "chatComposerSaveEdit": "Save edit",
+  "chatComposerSend": "Send message",
+  "chatRealtimeConnecting": "Connecting…",
 
   "commentsCancelEdit": "Cancel edit",
   "commentsCancelReply": "Cancel reply",
@@ -424,6 +439,7 @@
   "commentsCloseTooltip": "Close comments",
   "commentsCopied": "Copied",
   "commentsDeleteBody": "Replies under it will be removed too.",
+  "commentsDeletedSnack": "Comment deleted",
   "commentsDeleteTitle": "Delete this comment?",
   "commentsDeleteTooltip": "Delete comment",
   "commentsEdit": "Edit",
@@ -431,6 +447,7 @@
   "commentsEditingBanner": "Editing comment",
   "commentsEmojiTooltip": "Emoji",
   "commentsEmptyBody": "Be the first to say something kind.",
+  "commentsEmptyCta": "Add the first comment",
   "commentsEmptyTitle": "No comments yet",
   "commentsErrCopy": "Couldn't copy comment",
   "commentsErrDelete": "Couldn't delete comment",
@@ -801,19 +818,23 @@
   "dmBubbleReplying": "Replying",
   "dmBubbleSomeone": "Someone",
   "dmBubbleVerbEvent": "event",
+  "dmBubbleVerbPin": "pinned a message",
   "dmBubbleVerbScreenRecording": "started screen recording",
   "dmBubbleVerbScreenshot": "took a screenshot",
+  "dmBubbleVerbUnpin": "unpinned a message",
   "dmBubbleYou": "You",
   "dmChatAttachPhoto": "Attach photo",
-  "dmChatBlockedBody": "One of you blocked the other. You can still scroll the history above, but new messages won't send.",
-  "dmChatBlockedRubric": "MESSAGING BLOCKED",
-  "dmChatBlockedTitle": "You can no longer message this user",
+  "dmChatBlockedBody": "Messages aren't going through right now. They may have changed their DM settings, or one of you may have blocked the other. You can still scroll the history above. If you blocked them by accident, you can unblock them from their profile sheet.",
+  "dmChatBlockedRubric": "MESSAGES PAUSED",
+  "dmChatBlockedTitle": "New messages can't be sent right now",
   "dmChatCloseSearch": "Close search",
   "dmChatComposeHint": "Message…",
   "dmChatDeleteBody": "This removes it for both of you. Can't be undone.",
+  "dmChatDeletedSnack": "Message deleted",
   "dmChatDeleteTitle": "Delete this message?",
   "dmChatEditHint": "Edit message…",
   "dmChatEditingBanner": "Editing message",
+  "dmChatEditLastMessageTooltip": "Edit last message",
   "dmChatEmoji": "Emoji",
   "dmChatEmpty": "No messages yet. Say hi 👋",
   "dmChatErrDelete": "Couldn't delete message",
@@ -821,6 +842,8 @@
   "dmChatErrSaveEdit": "Couldn't save edit",
   "dmChatErrSend": "Couldn't send: your message is back in the box, tap send to try again",
   "dmChatErrSendGif": "Couldn't send the GIF",
+  "dmChatFailedA11y": "Message failed to send. Tap to retry.",
+  "dmChatFailedRetry": "Tap to retry",
   "dmChatGone": "This conversation is no longer available.",
   "dmChatKeyboard": "Keyboard",
   "dmChatLoadError": "We couldn't load these messages right now. Try again in a moment. ({error})",
@@ -830,11 +853,24 @@
   "dmChatMenuCopyText": "Copy text",
   "dmChatMenuEdit": "Edit",
   "dmChatMenuFavGif": "Favourite GIF",
+  "dmChatMenuPinMessage": "Pin to chat",
   "dmChatMenuReply": "Reply",
   "dmChatMenuUnfavGif": "Remove from favourites",
+  "dmChatMenuUnpinMessage": "Unpin from chat",
   "dmChatNoSearchMatch": "No messages match \"{query}\".",
   "@dmChatNoSearchMatch": {
     "placeholders": { "query": { "type": "String" } }
+  },
+  "dmChatOpenPinnedMessages": "View pinned messages",
+  "dmChatPreviewPinMine": "📌 You pinned a message",
+  "dmChatPreviewPinOther": "📌 {name} pinned a message",
+  "@dmChatPreviewPinOther": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+  "dmChatPreviewUnpinMine": "You unpinned a message",
+  "dmChatPreviewUnpinOther": "{name} unpinned a message",
+  "@dmChatPreviewUnpinOther": {
+    "placeholders": { "name": { "type": "String" } }
   },
   "dmChatReplying": "Replying",
   "dmChatReplyPhoto": "📎 photo",
@@ -849,6 +885,7 @@
   "dmChatSuspendUser": "Suspend this user",
   "dmChatThisUser": "this user",
   "dmChatTitleFallback": "Message",
+  "dmChatUnreadDivider": "New messages",
   "dmChatWarnUser": "Warn this user",
   "dmReactAllEmojisTooltip": "All emojis",
 
@@ -859,12 +896,18 @@
   "dmsDeleteBody": "This removes the whole thread for both of you, every message and reaction. Can't be undone.",
   "dmsDeleteConversation": "Delete conversation",
   "dmsDeleteTitle": "Delete this conversation?",
+
+  "dmSelfOptOutBody": "Your \"Who Can DM\" setting is set to Nobody, so you can't start or send messages. Change it in Settings → Privacy to start messaging again.",
+  "dmSelfOptOutRubric": "DIRECT MESSAGES OFF",
+  "dmSelfOptOutTitle": "You've turned off direct messages",
+
   "dmsEmptyTitle": "No conversations yet.",
   "dmsErrDelete": "Couldn't delete thread",
   "dmsLoadError": "We couldn't load your conversations right now. Try again in a moment. ({error})",
   "@dmsLoadError": {
     "placeholders": { "error": { "type": "String" } }
   },
+  "dmsMarkAsUnread": "Mark as unread",
   "dmsNewMessageButton": "+ New message",
   "dmsNewMessageSemantic": "New message",
   "dmsNewShort": "+ New",
@@ -872,6 +915,8 @@
   "@dmsNoMatch": {
     "placeholders": { "query": { "type": "String" } }
   },
+  "dmsPinConversation": "Pin to top",
+  "dmsPreviewDraftPrefix": "Draft: ",
   "dmsPreviewNoMessages": "No messages yet. Say hi 👋",
   "dmsPreviewScreenRecMine": "🎥 You started screen recording",
   "dmsPreviewScreenRecOther": "🎥 {name} started screen recording",
@@ -887,6 +932,7 @@
   "dmsSearchHint": "Search conversations",
   "dmsSubtitle": "Private conversations",
   "dmsTitle": "Messages",
+  "dmsUnpinConversation": "Unpin",
 
   "draftsListConfirmBody": "This permanently removes every saved reel draft on this device. Anything you haven't published yet is gone.",
   "draftsListConfirmTitle": "Discard all drafts?",
@@ -1184,6 +1230,13 @@
   "feedbackTitle": "Feedback",
   "feedbackUnavailable": "Feedback isn't available right now. Try again later.",
 
+  "feedPendingDismissA11y": "Dismiss this failed post",
+  "feedPendingFailedRetry": "Send failed · Tap to retry",
+  "feedPendingFailedShort": "send failed",
+  "feedPendingNow": "now",
+  "feedPendingPosting": "Posting…",
+  "feedPendingTapToRetryA11y": "Tap to retry sending this post",
+
   "forgotPasswordBackTooltip": "Back to sign in",
   "forgotPasswordEmailHint": "you@domain.com",
   "forgotPasswordEmailLabel": "Email",
@@ -1207,8 +1260,11 @@
   "friendBtnUnfriendTitle": "Unfriend?",
   "friendRequestsActionAccept": "Accept",
   "friendRequestsActionDecline": "Decline",
+  "friendRequestsEmptyFindPeopleCta": "Find people",
   "friendRequestsEmptyReceived": "No requests waiting on you.",
+  "friendRequestsEmptyReceivedBody": "When someone sends you a friend request, it shows up here.",
   "friendRequestsEmptySent": "You haven't sent any pending requests.",
+  "friendRequestsEmptySentBody": "Send one from someone's profile and it'll wait here until they accept or decline.",
   "friendRequestsErrAccept": "Couldn't accept the friend request",
   "friendRequestsErrCancel": "Couldn't cancel the friend request",
   "friendRequestsErrDecline": "Couldn't decline the friend request",
@@ -1237,6 +1293,7 @@
 
   "friendsListAddCircle": "Add to inner circle",
   "friendsListEmptyMineBody": "Tap a profile and hit Add Friend to start a connection.",
+  "friendsListEmptyMineCta": "Check friend requests",
   "friendsListEmptyMineTitle": "No friends yet",
   "friendsListEmptyOtherBody": "When they're connected with people, they'll show up here.",
   "friendsListEmptyOtherTitle": "No friends to show",
@@ -1264,8 +1321,10 @@
   "groupCardStaffChip": "STAFF",
   "groupChatDeleteBody": "This removes it for everyone in the group.",
   "groupChatDeleteBodyAdmin": "You're deleting another member's message as a group admin/mod. This removes it for everyone in the group.",
+  "groupChatDeletedSnack": "Message deleted",
   "groupChatDeleteTitle": "Delete message?",
   "groupChatDeleteTitleAdmin": "Delete this message?",
+  "groupChatEditLastMessageTooltip": "Edit last message",
   "groupChatEmpty": "No messages yet. Say hi 👋",
   "groupChatErrDelete": "Couldn't delete message",
   "groupChatErrReact": "Couldn't react",
@@ -1283,16 +1342,20 @@
   "groupChatMenuDeleteAdmin": "Delete (group admin)",
   "groupChatMenuEdit": "Edit",
   "groupChatMenuFavGif": "Favourite GIF",
+  "groupChatMenuPinMessage": "Pin to chat",
   "groupChatMenuReply": "Reply",
   "groupChatMenuReport": "Report message",
   "groupChatMenuRestore": "Restore (within 7 days)",
   "groupChatMenuUnfavGif": "Remove from favourites",
+  "groupChatMenuUnpinMessage": "Unpin from chat",
   "groupChatMomentShort": "a moment",
   "groupChatMutedTitle": "You're muted in this group",
   "groupChatMuteLiftsIn": "Mute lifts in {remaining}.",
   "@groupChatMuteLiftsIn": {
     "placeholders": { "remaining": { "type": "String" } }
   },
+  "groupChatOpenPinnedMessages": "View pinned messages",
+  "groupChatPinAdminOnly": "Only admins can pin messages",
   "groupChatRecordingWarnFailed": "We couldn't post the recording warning just now. ({error})",
   "@groupChatRecordingWarnFailed": {
     "placeholders": { "error": { "type": "String" } }
@@ -1318,8 +1381,10 @@
   "groupChatVerbChatWiped": "cleared the chat history",
   "groupChatVerbDefault": "event",
   "groupChatVerbJoined": "joined the group",
+  "groupChatVerbPin": "pinned a message",
   "groupChatVerbScreenRecording": "started screen recording",
   "groupChatVerbScreenshot": "took a screenshot",
+  "groupChatVerbUnpin": "unpinned a message",
   "groupChatYou": "You",
   "groupCommentsCancelReply": "Cancel reply",
   "groupCommentsDeleteA11y": "Delete comment",
@@ -1703,6 +1768,8 @@
   "groupSettingsGuestBodyToggle": "Welcome guests with a separate message",
   "groupSettingsGuestBodyToggleSub": "When on, non-members see your guest welcome instead of the main \"About\" body.",
   "groupSettingsGuestHint": "Welcome guests: what to know before joining (up to 4000 chars)",
+  "groupSettingsHideFromMutualsToggle": "Hide from Mutual Groups",
+  "groupSettingsHideFromMutualsToggleSub": "Don't show this group in anyone's \"mutual groups\" section on profiles. Useful for sensitive communities.",
   "groupSettingsHideWhoJoined": "Hide who joined",
   "groupSettingsInfoNameLenErr": "Group name must be between 2 and 60 characters.",
   "groupSettingsInfoNameNotAllowed": "That group name isn't allowed.",
@@ -1957,6 +2024,11 @@
     "placeholders": { "group": { "type": "String" } }
   },
 
+  "hashtagGroupsError": "Couldn't load groups.",
+  "hashtagNoGroups": "No groups with #{tag} yet.",
+  "@hashtagNoGroups": {
+    "placeholders": { "tag": { "type": "String" } }
+  },
   "hashtagNoPosts": "No posts with #{tag} yet.",
   "@hashtagNoPosts": {
     "placeholders": { "tag": { "type": "String" } }
@@ -1967,6 +2039,7 @@
   },
   "hashtagPostsError": "Couldn't load posts.",
   "hashtagReelsError": "Couldn't load reels.",
+  "hashtagTabGroups": "Groups",
   "hashtagTabPosts": "Posts",
   "hashtagTabReels": "Reels",
   "hashtagTryAgain": "Try again",
@@ -2189,8 +2262,14 @@
   "imageCropEditTitle": "Edit photo",
   "imageCropTitle": "Crop photo",
 
+  "inAppActorLuneyRewind": "Luney Rewind",
   "inAppActorLuneyStaff": "Luney Staff",
+  "inAppActorLuneyTeam": "Luney team",
+  "inAppActorModerationTeam": "Luney moderation team",
+  "inAppActorNewBadge": "New badge",
   "inAppActorSomeone": "Someone",
+  "inAppActorYourGroup": "Your group",
+  "inAppActorYourReel": "Your reel",
   "inAppAnotherMember": "another member",
   "inAppArticleAdmin": "an admin",
   "inAppArticleModerator": "a moderator",
@@ -2299,6 +2378,9 @@
   "inAppModTitle": "Luney moderation",
   "inAppModWarn": "A warning was issued on your account.",
 
+  "inlineReelFailed": "Reel failed",
+  "inlineReelProcessing": "Processing…",
+
   "inviteAlreadyMember": "You're already in this group.",
   "inviteBackHome": "Back to home",
   "inviteErrExhausted": "This invite has been used up.",
@@ -2321,6 +2403,25 @@
   "languagePickerTitle": "Language",
   "languageSystemDefault": "System default",
   "@languageSystemDefault": { "description": "Locale option: follow the device language." },
+
+  "lastSeenActiveNow": "Active now",
+  "lastSeenDaysAgo": "Last seen {n}d ago",
+  "@lastSeenDaysAgo": {
+    "placeholders": { "n": { "type": "int" } }
+  },
+  "lastSeenHoursAgo": "Last seen {n}h ago",
+  "@lastSeenHoursAgo": {
+    "placeholders": { "n": { "type": "int" } }
+  },
+  "lastSeenLongAgo": "Last seen a while ago",
+  "lastSeenMinutesAgo": "Last seen {n} min ago",
+  "@lastSeenMinutesAgo": {
+    "placeholders": { "n": { "type": "int" } }
+  },
+  "lastSeenWeeksAgo": "Last seen {n}w ago",
+  "@lastSeenWeeksAgo": {
+    "placeholders": { "n": { "type": "int" } }
+  },
 
   "lobbiesListDisabledBanner": "Live Lobbies is paused this month while we sort out audio costs. Back soon.",
   "lobbiesListEmptyBody": "Be the first to start one. Tap the button below.",
@@ -2560,6 +2661,29 @@
   "mentionTextNotFoundTitle": "Handle not found",
   "mentionTextRubric": "MENTION",
 
+  "milestoneAnniversaryAccountBirthdayTitle": "{count, plural, =1{1 year on Luney today} other{{count} years on Luney today}}",
+  "@milestoneAnniversaryAccountBirthdayTitle": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "milestoneAnniversaryCardSent": "Card sent 💌",
+  "milestoneAnniversaryFirstDmTitle": "{count, plural, =1{1 year of chatting today} other{{count} years of chatting today}}",
+  "@milestoneAnniversaryFirstDmTitle": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "milestoneAnniversaryGroupJoinTitle": "{count, plural, =1{1 year in this group today} other{{count} years in this group today}}",
+  "@milestoneAnniversaryGroupJoinTitle": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "milestoneAnniversaryTapToSend": "Tap to send a card",
+
+  "muteDuration1Hour": "Mute for 1 hour",
+  "muteDuration8Hours": "Mute for 8 hours",
+  "muteDurationForever": "Mute until I turn it back on",
+  "muteDurationSheetTitle": "Mute notifications",
+  "muteFailed": "Couldn't update mute",
+  "muteThreadMute": "Mute notifications",
+  "muteThreadUnmute": "Unmute notifications",
+
   "myAchievementsEmptyBody": "Keep using Luney. Some are awarded automatically; others get granted by the team.",
   "myAchievementsEmptyTitle": "No achievements yet.",
   "myAchievementsTitle": "Your achievements",
@@ -2574,13 +2698,19 @@
   "myReelsTitle": "Your reels",
   "myReelsTryAgain": "Try again",
 
-  "newDmBlockedBody": "One of you has blocked the other, so a new DM can't start. If you blocked them by accident, unblock them from their profile sheet.",
-  "newDmBlockedRubric": "CONVERSATION BLOCKED",
-  "newDmBlockedTitle": "You can't start this conversation",
-  "newDmEmptyPrompt": "Find someone to message. Type a handle.",
+  "newDmBlockedBody": "You can't start a new DM with this person right now. They may limit who can DM them, or one of you may have blocked the other. If you blocked them by accident, you can unblock them from their profile sheet.",
+  "newDmBlockedRubric": "DMS UNAVAILABLE",
+  "newDmBlockedTitle": "You can't start a DM with this person",
+  "newDmEmptyBody": "Add a friend from their profile to start a chat, or find someone new.",
+  "newDmEmptyPrompt": "You haven't added any friends yet. Send a friend request from someone's profile to start a chat.",
+  "newDmEmptyTitle": "No one to message yet",
   "newDmErrStart": "Couldn't start chat",
-  "newDmNoResults": "No one found.",
-  "newDmSearchHint": "Search by handle…",
+  "newDmFindPeopleCta": "Find people",
+  "newDmFriendsLoadError": "Couldn't load your friends list. Try again in a moment.",
+  "newDmNoResults": "No friends match.",
+  "newDmNoResultsBody": "Try a different name or handle.",
+  "newDmNoResultsTitle": "No friends match",
+  "newDmSearchHint": "Search your friends",
   "newDmSearching": "Searching…",
   "newDmTitle": "New message",
   "newTicketAttachFile": "File",
@@ -2790,6 +2920,8 @@
   "notifKindEventRsvpTitle": "RSVPs to your events",
   "notifKindFeedbackCommentReceivedSubtitle": "Someone commented on a feedback submission you posted.",
   "notifKindFeedbackCommentReceivedTitle": "Comments on your feedback",
+  "notifKindFeedbackReplySubtitle": "The Luney team replied to a feedback submission you posted.",
+  "notifKindFeedbackReplyTitle": "Replies from the Luney team",
   "notifKindFriendAcceptSubtitle": "Someone accepted your friend request.",
   "notifKindFriendAcceptTitle": "Friend accepts",
   "notifKindFriendRequestSubtitle": "Someone sent you a friend request.",
@@ -2935,6 +3067,12 @@
   "oauthLinkSubmit": "Sign in & link",
   "oauthLinkTitle": "Link to your existing account?",
 
+  "offlineBannerMessage": "You're offline. Sends will retry when you're back.",
+
+  "onboardingAvatarChangeHint": "Tap to change your photo. You can always update it later in Edit Profile.",
+  "onboardingAvatarPickHint": "Tap to add a photo. You can also skip and add one later.",
+  "onboardingAvatarSub": "Adding a photo helps friends recognise you. This step is optional.",
+  "onboardingAvatarTitle": "Profile photo",
   "onboardingBioHint": "A few sentences about you. You can edit this later.",
   "onboardingBioLabel": "Bio (optional)",
   "onboardingContinue": "Continue",
@@ -3077,7 +3215,35 @@
   "panicSettingsThresholdLabel": "Taps on the Me tab to trigger",
   "panicSettingsTitle": "Panic Mode",
 
+  "pinnedMessageAttachmentLabel": "📎 attachment",
+  "pinnedMessageEmptyText": "(no text)",
+  "pinnedMessagesEmpty": "No pinned messages yet. Long-press a message to pin it to the chat.",
+  "pinnedMessagesEmptyBody": "Long-press any message and tap Pin to add it here.",
+  "pinnedMessagesEmptyTitle": "No pinned messages yet",
+  "pinnedMessagesLimitReached": "Pin limit reached (25). Unpin one to add another.",
+  "pinnedMessagesLoadError": "Couldn't load pinned messages. Try again in a moment.",
+  "pinnedMessagesTitle": "Pinned messages {count}",
+  "@pinnedMessagesTitle": {
+    "placeholders": { "count": { "type": "String" } }
+  },
+  "pinnedMessagesUnpinConfirmAction": "Unpin",
+  "pinnedMessagesUnpinConfirmBody": "It will be removed from the pinned messages tray. The original message stays in the chat.",
+  "pinnedMessagesUnpinConfirmTitle": "Unpin this message?",
+
+  "policyLoadError": "Couldn't load this document right now. Try again in a moment.",
+  "policyNotPublished": "This document hasn't been published yet.",
+  "policyPrivacyTitle": "Privacy Policy",
+  "policyTermsTitle": "Terms of Service",
+  "policyVersionLine": "Version {version} · Published {date}",
+  "@policyVersionLine": {
+    "placeholders": {
+      "version": { "type": "int" },
+      "date": { "type": "String" }
+    }
+  },
+
   "postCardDeleteBody": "This can't be undone.",
+  "postCardDeletedSnack": "Post deleted",
   "postCardDeleteTitle": "Delete this post?",
   "postCardEdit": "Edit",
   "postCardEditHint": "What do you want to say?",
@@ -3136,6 +3302,21 @@
   "postTypeRandom": "Random",
   "postTypeT4t": "T4T",
 
+  "preferencesChatEditLastChevronSubtitle": "Adds a small ↑ inside the chat composer when it's empty. Tap it to pop your most recent message into edit mode.",
+  "preferencesChatEditLastChevronTitle": "Show edit-last-message button",
+  "preferencesSectionChat": "CHAT",
+  "preferencesTitle": "Preferences",
+
+  "presenceAwayLabel": "Away",
+  "presenceAwaySub": "Around but not actively using the app",
+  "presenceDndLabel": "Do Not Disturb",
+  "presenceDndSub": "I'm here but please don't ping me",
+  "presenceInvisibleLabel": "Invisible",
+  "presenceInvisibleSub": "Appear offline to others. You still see their dots.",
+  "presenceOnlineLabel": "Online",
+  "presenceOnlineSub": "Active right now",
+  "presencePickerTitle": "Set status",
+
   "privacyAccountActivitySubtitle": "Every Luney moderation action on your account: warnings, removals, lifts, outreach.",
   "privacyAccountActivityTitle": "Account activity",
   "privacyAccountReviewsSubtitle": "See when Luney staff reviewed your account and in what scope.",
@@ -3165,6 +3346,17 @@
   "@privacyDeletionScheduledTitle": {
     "placeholders": { "date": { "type": "String" } }
   },
+  "privacyDmAudienceEveryone": "Everyone",
+  "privacyDmAudienceEveryoneDesc": "Anyone on Luney can send you a new DM. Per-group blocks still apply.",
+  "privacyDmAudienceExisting": "Existing conversations only",
+  "privacyDmAudienceExistingDesc": "Nobody new can start a DM with you, but people you're already messaging keep working.",
+  "privacyDmAudienceFof": "Friends of friends",
+  "privacyDmAudienceFofDesc": "Friends + friends of your friends. Per-group blocks still apply.",
+  "privacyDmAudienceFriends": "Friends only",
+  "privacyDmAudienceFriendsDesc": "Only people you are friends with. Per-group blocks still apply.",
+  "privacyDmAudienceNobody": "Nobody",
+  "privacyDmAudienceNobodyDesc": "Nobody can DM you, including existing thread partners. Switch back any time to resume.",
+  "privacyDmAudienceSheetTitle": "Who can DM you",
   "privacyDownloadTitle": "Download My Data",
   "privacyExportAvailableIn": "{days, plural, =1{Available again in 1 day (on {date}).} other{Available again in {days} days (on {date}).}}",
   "@privacyExportAvailableIn": {
@@ -3203,22 +3395,37 @@
   },
   "privacyFuzzySubtitle": "Show your location within ~5km instead of exact",
   "privacyFuzzyTitle": "Fuzzy Location",
+  "privacyHideMeFromMutualFriendsSubtitle": "Don't show me in anyone else's 'mutual friends' section. They won't see we're both friends with this person.",
+  "privacyHideMeFromMutualFriendsTitle": "Hide Me from Others' Mutual Friends",
+  "privacyHideMutualFriendsOnProfileSubtitle": "Hide the 'mutual friends' section on your profile so visitors don't see who you both know.",
+  "privacyHideMutualFriendsOnProfileTitle": "Hide Mutual Friends on My Profile",
+  "privacyHideMutualGroupsOnProfileSubtitle": "Hide the 'mutual groups' section on your profile so visitors don't see which groups you share.",
+  "privacyHideMutualGroupsOnProfileTitle": "Hide Mutual Groups on My Profile",
+  "privacyOnlineStatusSubtitle": "Show others a colored dot on your avatar: green when you're active, yellow when you're idle, red when you've set Do Not Disturb. Or pick Invisible to appear offline.",
+  "privacyOnlineStatusTitle": "Online Status",
   "privacyReadReceiptsSubtitle": "Let people see when you've read their DMs. Turn off and you won't see theirs either.",
   "privacyReadReceiptsTitle": "Read Receipts",
   "privacySectionDangerZone": "DANGER ZONE",
   "privacySectionMessaging": "MESSAGING",
+  "privacySectionMutuals": "MUTUALS",
   "privacySectionSharing": "SHARING",
   "privacySectionStaffAccess": "STAFF ACCESS",
   "privacySectionVisibility": "VISIBILITY",
   "privacySectionYourData": "YOUR DATA",
+  "privacyShareLinkSubtitle": "Lets you share a luneyapp.com/u/<handle> link to your profile. Off by default so your account isn't discoverable via a guessable URL; flip on if you want a link to give out.",
+  "privacyShareLinkTitle": "Allow profile link sharing",
   "privacyShareSubtitle": "Lets others share your posts outside Luney. Applies to all your posts.",
   "privacyShareTitle": "Allow Sharing My Posts",
+  "privacyShowLastSeenSubtitle": "Let others see a 'Last seen X ago' line under your name when you're offline. The live green dot keeps working when you're online; this only controls the trailing line.",
+  "privacyShowLastSeenTitle": "Show Last Seen",
   "privacyStealthSubtitle": "Hide from Map · no read receipts · invisible online",
   "privacyStealthTitle": "Stealth Mode",
   "privacyTitle": "Privacy",
   "privacyUpdateErrorOp": "Couldn't update setting",
   "privacyWhoCanCommentSubtitle": "Default for your new posts. Each post can still turn comments off.",
   "privacyWhoCanCommentTitle": "Who Can Comment",
+  "privacyWhoCanDmSubtitle": "Outer gate for direct messages. Per-group DM blocks (Group → Settings → \"Allow DMs from members\") narrow this further.",
+  "privacyWhoCanDmTitle": "Who Can DM",
 
   "profileMenuBlock": "Block",
   "profileMenuBlockBody": "They won't be able to see your posts or send you a friend request. Any existing friendship will be removed.",
@@ -3230,16 +3437,29 @@
   "profileMenuErrUnblock": "Couldn't unblock user",
   "profileMenuReport": "Report",
   "profileMenuUnblock": "Unblock",
+  "profileMutualFriendsTitle": "{count, plural, =1{1 mutual friend} other{{count} mutual friends}}",
+  "@profileMutualFriendsTitle": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "profileMutualGroupsTitle": "{count, plural, =1{1 mutual group} other{{count} mutual groups}}",
+  "@profileMutualGroupsTitle": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "profileMutualMore": "more",
   "profilePostsEmpty": "Posts will show up here as {displayName} shares them with you.",
   "@profilePostsEmpty": {
     "placeholders": { "displayName": { "type": "String" } }
   },
+  "profilePostsEmptyMineBody": "Your first post lands on your profile + your friends' home feeds. Tap below to start.",
+  "profilePostsEmptyMineCta": "Create your first post",
+  "profilePostsEmptyMineTitle": "Nothing on your wall yet",
   "profilePostsHeader": "POSTS",
   "profileReelsSectionHeader": "REELS",
   "profileReelsSectionOpenLabel": "Open reel",
   "profileReelsSectionProcessingLabel": "Reel processing",
   "profileReelsSectionStatusFailed": "Failed",
   "profileReelsSectionStatusProcessing": "Processing…",
+  "profileScreenAvatarPresence": "Your profile photo. Double-tap to change your online status.",
   "profileScreenBadgePrivate": "🔒 Private",
   "profileScreenBadgeStealth": "🕶️ Stealth",
   "profileScreenEditProfile": "Edit profile",
@@ -3265,8 +3485,18 @@
   },
   "profileScreenSeeMore": "See more",
   "profileScreenSettings": "Settings",
+  "profileScreenShare": "Share my profile",
   "profileScreenShowLess": "Show less",
   "profileScreenWithinKm": "📍 within 5km",
+  "profileShareOptInBody": "Off by default. Turn it on if you want a luneyapp.com/u/<handle> link to give out to people.",
+  "profileShareOptInBullet1": "Anyone with the link sees your display name, handle, avatar, banner, and bio",
+  "profileShareOptInBullet2": "DMs, posts, and friend list are NEVER exposed by the link",
+  "profileShareOptInBullet3": "Scrapers can't enumerate accounts when this is off",
+  "profileShareOptInCtaLater": "Not now",
+  "profileShareOptInCtaYes": "Yes, enable my share link",
+  "profileShareOptInErrorOp": "Couldn't save your share preference",
+  "profileShareOptInFootnote": "You can change this any time at Settings → Privacy → Allow profile link sharing.",
+  "profileShareOptInTitle": "Want a shareable profile link?",
   "profileSheetAddNote": "Add a note",
   "profileSheetAssignRoles": "Assign roles",
   "profileSheetAvatar": "Avatar",
@@ -3420,6 +3650,17 @@
   "profileSheetVipNicknameTitle": "Per-group display names are a VIP perk",
   "profileSheetWarn": "Warn",
 
+  "pushPrePromptBullet1": "New direct messages from friends",
+  "pushPrePromptBullet2": "Mentions in chats and posts",
+  "pushPrePromptBullet3": "Replies and reactions to your posts",
+  "pushPrePromptBullet4": "Group messages from groups you're in",
+  "pushPrePromptBullet5": "Friend requests and accepts",
+  "pushPrePromptCtaLater": "Not now",
+  "pushPrePromptCtaYes": "Yes, enable notifications",
+  "pushPrePromptFootnote": "You can fine-tune every category later in Settings → Notifications.",
+  "pushPrePromptSubtitle": "Push notifications keep you in the loop for the things you'd hate to miss.",
+  "pushPrePromptTitle": "Want a heads-up when something happens?",
+
   "recordingModeBannerMessage": "Recording mode: screen protection is OFF on this device{until}.",
   "@recordingModeBannerMessage": {
     "placeholders": { "until": { "type": "String" } }
@@ -3528,6 +3769,8 @@
 
   "reelsHomeRailAddLabel": "Add your reel",
   "reelsHomeRailMe": "Me",
+  "reelsHomeRailUploading": "Uploading…",
+  "reelsHomeRailUploadingA11y": "Your reel is uploading",
   "reelsHomeRailYourReel": "Your reel",
 
   "reelSplitAtPlayhead": "Split at playhead",
@@ -4015,6 +4258,65 @@
   },
   "sendAnniversaryCardTitle": "Send a friendiversary card",
 
+  "sessionsActiveAgo": "Active {when}",
+  "@sessionsActiveAgo": {
+    "placeholders": { "when": { "type": "String" } }
+  },
+  "sessionsAppVersion": "App {version} ({build})",
+  "@sessionsAppVersion": {
+    "placeholders": {
+      "version": { "type": "String" },
+      "build": { "type": "String" }
+    }
+  },
+  "sessionsDayAgo": "{count, plural, =1{1 day ago} other{{count} days ago}}",
+  "@sessionsDayAgo": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "sessionsEmpty": "Nothing to show. You're signed in here, that's it.",
+  "sessionsHourAgo": "{count, plural, =1{1 hour ago} other{{count} hours ago}}",
+  "@sessionsHourAgo": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "sessionsIntro": "Every device that's signed in to your account. Tap Sign out on any device that isn't yours.",
+  "sessionsJustNow": "just now",
+  "sessionsLoadError": "Couldn't load sessions: {error}",
+  "@sessionsLoadError": {
+    "placeholders": { "error": { "type": "String" } }
+  },
+  "sessionsMinAgo": "{count, plural, =1{1 min ago} other{{count} min ago}}",
+  "@sessionsMinAgo": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "sessionsRevokedSheetMessage": "{device} is signed out. The device will sign itself out completely the next time it pings (within ~4 hours); until then it can no longer send DMs or post on your account.",
+  "@sessionsRevokedSheetMessage": {
+    "placeholders": { "device": { "type": "String" } }
+  },
+  "sessionsRevokedSheetRubric": "DEVICE SIGNED OUT",
+  "sessionsRevokedSheetTitle": "Device signed out",
+  "sessionsRevokeErrorOp": "Couldn't sign out that device",
+  "sessionsSignOut": "Sign out",
+  "sessionsSignOutOthersConfirm": "Sign out other devices",
+  "sessionsSignOutOthersDecline": "Keep them signed in",
+  "sessionsSignOutOthersDoneMessage": "Each of them will need to sign in again with your new password. Your current device stays signed in.",
+  "sessionsSignOutOthersDoneRubric": "OTHER DEVICES SIGNED OUT",
+  "sessionsSignOutOthersDoneTitle": "{count, plural, =0{No other devices were signed in} =1{1 other device signed out} other{{count} other devices signed out}}",
+  "@sessionsSignOutOthersDoneTitle": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "sessionsSignOutOthersErrorOp": "Couldn't sign out other devices",
+  "sessionsSignOutOthersMessage": "For safety, you can sign out every other device that's currently logged in with your old password. This one stays signed in.",
+  "sessionsSignOutOthersRubric": "PASSWORD CHANGED",
+  "sessionsSignOutOthersTitle": "Sign out other devices?",
+  "sessionsThisDevice": "THIS DEVICE",
+  "sessionsTileLabel": "Active sessions",
+  "sessionsTileSubtitle": "See every device signed in to your account and sign any of them out.",
+  "sessionsTitle": "Active sessions",
+  "sessionsWeekAgo": "{count, plural, =1{1 week ago} other{{count} weeks ago}}",
+  "@sessionsWeekAgo": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+
   "settingsAboutLuney": "About Luney",
   "settingsAccountViolations": "Account Violations",
   "settingsEditProfile": "Edit Profile",
@@ -4030,6 +4332,7 @@
     "placeholders": { "count": { "type": "int" } }
   },
   "settingsPermsNone": "No permissions loaded.",
+  "settingsPreferences": "Preferences",
   "settingsPrivacy": "Privacy",
   "settingsRecordingMode": "Recording Mode",
   "settingsRecordingModeError": "Couldn't change recording mode",
@@ -4057,6 +4360,7 @@
   "settingsVipMembership": "VIP Membership",
 
   "shareableContentPost": "post",
+  "shareableContentProfile": "profile",
   "shareableContentReel": "reel",
   "shareablePostBody": "{excerpt}\n\nvia @{handle} on Luney\n{url}",
   "@shareablePostBody": {
@@ -4068,6 +4372,18 @@
   },
   "shareablePostSubject": "Luney post by @{handle}",
   "@shareablePostSubject": {
+    "placeholders": { "handle": { "type": "String" } }
+  },
+  "shareableProfileBody": "Find {displayName} on Luney\n@{handle}\n{url}",
+  "@shareableProfileBody": {
+    "placeholders": {
+      "displayName": { "type": "String" },
+      "handle": { "type": "String" },
+      "url": { "type": "String" }
+    }
+  },
+  "shareableProfileSubject": "@{handle} on Luney",
+  "@shareableProfileSubject": {
     "placeholders": { "handle": { "type": "String" } }
   },
   "shareableReelBody": "{caption}Reel by {owner} on Luney\n{url}",
@@ -4087,6 +4403,7 @@
   "sharedContentEmbedAFriend": "a friend",
   "sharedContentEmbedKindPost": "POST",
   "sharedContentEmbedKindReel": "REEL",
+  "sharedContentEmbedKindUser": "PROFILE",
   "sharedContentEmbedPhotoPost": "Photo post",
   "sharedContentEmbedPost": "Post",
   "sharedContentEmbedReel": "Reel",
@@ -4542,6 +4859,17 @@
     }
   },
 
+  "undoSnackDeletedGhost": "deleted",
+  "undoSnackRestoredGhost": "restored",
+  "undoSnackUndo": "UNDO",
+
+  "updateRequiredBodyDefault": "A new version of Luney is required to keep going. Update from the store and we'll pick up right where you left off.",
+  "updateRequiredCta": "Update now",
+  "updateRequiredDebugRefreshDone": "Version-floor check complete.",
+  "updateRequiredDebugRefreshLabel": "Refresh version floor now",
+  "updateRequiredLaunchError": "Couldn't open the store app. Tap again, or open the Luney listing manually.",
+  "updateRequiredTitle": "Time to update Luney",
+
   "vipBadge": "VIP",
   "vipFinePrintAutoRenew": "Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current period. Manage or cancel any time in your {store} subscription settings.",
   "@vipFinePrintAutoRenew": {
@@ -4698,5 +5026,23 @@
     "placeholders": { "count": { "type": "int" } }
   },
   "weeklyPromptThreadUnavailableBody": "It may have been deleted, or its author is no longer visible.",
-  "weeklyPromptThreadUnavailableTitle": "This response isn't available anymore."
+  "weeklyPromptThreadUnavailableTitle": "This response isn't available anymore.",
+
+  "welcomeSheetDismiss": "Got it, let's go",
+  "welcomeSheetSubtitle": "Here's a quick tour of what's on offer.",
+  "welcomeSheetTip1Body": "Posts from your friends, shared interests, and community surfaces like the Weekly Prompt land here.",
+  "welcomeSheetTip1Title": "Home is your feed",
+  "welcomeSheetTip2Body": "Join or create groups around interests, communities, or close friends. Each one has its own chat, posts, and reels.",
+  "welcomeSheetTip2Title": "Groups for shared spaces",
+  "welcomeSheetTip3Body": "Send a friend request from someone's profile, then start a 1:1 conversation. Photos and drafts stay encrypted on your device.",
+  "welcomeSheetTip3Title": "DMs for private chats",
+  "welcomeSheetTip4Body": "Share a short video reel, a longer post, or join the daily Weekly Prompt to hear what the community thinks.",
+  "welcomeSheetTip4Title": "Reels, posts, and prompts",
+  "welcomeSheetTip5Body": "Settings → Privacy hides your activity, locks your account in Panic Mode, and lets you mute or block anyone, any time.",
+  "welcomeSheetTip5Title": "Safety + privacy controls",
+  "welcomeSheetTitle": "Welcome to Luney",
+
+  "whatsNewSheetDismiss": "Got it",
+  "whatsNewSheetSubtitle": "A quick tour of what we've added in this update.",
+  "whatsNewSheetTitle": "What's New"
 }
